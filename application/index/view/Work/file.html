@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>文件下载</title>
+  <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+  <link rel="stylesheet" href="__PUBLIC__/css/fileDownloadDetail.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css">
+  <link rel="stylesheet" href="__PUBLIC__/css/poor.css">
+
+</head>
+<body>
+   <!-- 引用公共头部 -->
+    {include file="common/header" /}
+<div class="wrap">
+  <div class="center">
+    <p class="top_title">您现在的位置 | <a href="{:url('Work/index')}">办事指南</a> > | <span> 文件下载 </span></p>
+    <div class="mid_content">
+      <div class="work_title">
+        <h3>文件下载</h3>
+      </div>
+
+      <div class="file_list">
+        <div class="file_list_center">
+          <div class="mid_content_download clearfix">
+            <style>
+              .mid_content_download ul li .download_button1 {
+                float: right;
+                width: 60px;
+                color: #6391f1;
+              }
+              .mid_content_download ul li .download_button1:hover {
+                color: blue;
+              }
+              .work_title {
+
+                width: 88%;
+                margin:0 auto;
+                margin-top: 40px;
+                margin-bottom: 30px;
+                font-size: 22px;
+              }
+              .mid_content_download a {
+                width: 65%;
+              }
+            </style>
+            <ul>
+              {volist name="file" id="vo"}
+                <li>
+                  <a href="" title="{$vo.file}"><span>【{$vo.address}】</span><span class="overhide">{$vo.file}</span><span>[{$vo.time}]</span></a><a
+                      href="{:url('Work/download',array('id'=>$vo.id))}" class="download_button1">点击下载</a>
+                </li>
+              {/volist}
+             <!--  <li><a href="#"><span>【金光路办事处】</span><span class="overhide">金光路党工委书记王文斌对柳湖办事处开展仓储物流消防安全检查工作园口村搅拌站环...</span><span>[2018-04-28 15:40]</span></a><a
+                      href="#" class="download_button1">点击下载</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 引用公共底部 -->
+{include file="common/footer" /}
+</body>
+</html>

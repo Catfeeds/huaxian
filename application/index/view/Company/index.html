@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>企业风采</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/yc.css">
+    <script src="__PUBLIC__/js/jquery-3.3.1.js"></script>
+    <script src="__PUBLIC__/js/base.js"></script>
+</head>
+<body>
+<script>
+    $(function () {
+        $(".inner-box").height($(".inner-box .dd").height()+50);
+        $("#compony1 li").on("click", function () {
+            $(this).children("span").removeClass('black');
+            $(this).addClass('current').siblings().removeClass('current').children("span").addClass('black');
+
+            $(this).children(".dd").fadeIn();
+            $(this).siblings().children(".dd").fadeOut();
+            $(".inner-box").height($(this).children(".dd").height()+50);
+        })
+    })
+</script>
+<!-- 引用公共头部 -->
+    {include file="common/header" /}
+    <div class="wrap">
+        <div class="inner-box">
+            <div class="tabTwo">
+                <ul class="clearfix" id="compony1">
+                    <li class="current">
+                        <span>企业之窗</span>
+                        <div class="dd">
+                            {volist name="company" id="vo"}
+                                <div class="wrap2">
+                                    <div class="left">
+                                        <img src="__IMG__{$vo.image}" alt="">
+                                    </div>
+                                    <div class="right">
+                                        <h2>{$vo.title}</h2>
+                                        <p>{$vo.description}</p>
+                                        <!-- <p>河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美。</p> -->
+                                    </div>
+                                </div>
+                            {/volist}
+                            <!-- <div class="wrap2">
+                                <div class="left">
+                                    <img src="__PUBLIC__/images/company1.png" alt="">
+                                </div>
+                                <div class="right">
+                                    <h2>华康粮油</h2>
+                                    <p>河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美。</p>
+                                    <p>河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美。</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </li>
+                    <li>
+                        <span class="black">重点项目</span>
+                        <div class="dd" style="display: none;">
+                            {volist name="project" id="v1"}
+                                <div class="wrap2">
+                                    <div class="left">
+                                        <img src="__IMG__{$v1.image}" alt="">
+                                    </div>
+                                    <div class="right">
+                                        <h2>{$v1.title}</h2>
+                                        <p>{$v1.description}</p>
+                                        <!-- <p>河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美。</p> -->
+                                    </div>
+                                </div>
+                            {/volist}
+                            <!-- <div class="wrap2">
+                                <div class="left">
+                                    <img src="__PUBLIC__/images/company1.png" alt="">
+                                </div>
+                                <div class="right">
+                                    <h2>永达</h2>
+                                    <p>河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美。</p>
+                                    <p>河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美河南省华康最求完美。</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </li>
+                </ul>
+                <div class="lineSlight"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 引用公共底部 -->
+    {include file="common/footer" /}
+</body>
+</html>

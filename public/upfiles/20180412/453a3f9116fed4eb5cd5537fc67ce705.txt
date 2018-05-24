@@ -1,0 +1,137 @@
+﻿小花匠
+FTP链接地址 vhost401.cloudvhost.cn 
+FTP账号 webmaster@HA277533
+FTP密码 
+小花匠后台登陆密码 admin  s2081362
+
+
+
+61.163.210.29
+administrator
+fdshfee%fkd;isnfi&pOH(F$%njiRdhjb$%^
+
+      
+
+	  
+218.28.14.188 
+administrator
+ceYIlskjdncu9r84
+
+
+
+公网IP：42.228.11.181 
+用户名：administrator
+密码：hhhuifhedne&YG%53RFGHJKkdjkji122fghtj6TH@#
+系统信息：
+windowsServer2008
+2核 4G  40G+60G  5M
+端口暂开：3389/8080/8088/3306
+
+
+
+123456
+133fdff3f2a2313eba023ae05d8cb5b71489e86b
+
+
+
+wxcb37a4148cefcf75
+c2e903f1ce8f72509649f95362811c3a
+
+
+河南中浩公众号 
+zhouxy@zih718.com  
+zhkj7181
+APPID       wx9ea63e77ad7b0c6d
+APPsecret   6082b022174a044f45b390c891daa22f
+
+
+
+
+服务器名称：易贸通
+域名：http://www.ymt-hn.com
+公网IP：218.28.14.142 
+内网地址：10.10.9.56 
+用户名：administrator
+密码：niehwb%&WTYQRF#%096biu
+系统信息：
+win08  4核 8G  40G+60G  3M
+端口暂开：3389/3306
+
+
+
+
+
+河南中浩科技公司
+账号：liran@zih718.com
+密码：Lgkj7181
+APPID wxd48c6d6fe8af01d2
+AppSecret 1d47cae6f9e3b6e914efde5b2d6f9ec1
+商户号  1498748592
+操作密码  365liran/./
+
+
+
+
+上海时韫
+tidetop.cn
+shiyuncompany.com
+原IP：117.159.3.230
+内网地址：10.10.9.69
+用户名：administrator
+密码：jkwbaiu(&(%#870ETYtgoym
+系统信息：
+win12  4核 8G  40G+60G  5M
+端口暂开：3389/80
+
+暂用：42.228.11.165
+www.elengl.com
+jtsh@12Z&Sfwl1*05rpy
+
+公司名称上海时韫实业有限公司
+商户简称上海时韫
+客服电话18003848227
+联系人郭丹
+手机号码15652485882
+常用邮箱shiyunjiudian@sina.com
+
+一、微信
+公众号：shshiyun
+账号：shiyunjiudian@sina.com
+密码：shiyunjiudian888
+APPID：wxab5b277a8538494a
+APPsecret：1c6a85726e8b51ce36261b051c4585ee
+商户号：1328255301
+操作码：tidetop9982.
+api秘钥：g34yc31swccoa5kgt0awpsiw5hxek0aq
+
+二、支付宝
+账号：shiyunjiudian@sina.com
+密码：FightingSY9982
+PID：2088221543175954
+安全检验码：2aqekzb34met1bn3os4gmexwgb4zirrb
+商户平台账号：bestcompanysh
+密码：7799gd&lzh
+
+未知：5tp1zdanik4dif0rzi4ufvly2dhevqyo
+
+
+阿里云：
+账号:
+bestcompanysh 
+密码
+:
+7799gd&lzh
+
+测试服务器：
+公网IP：218.28.14.150
+内网地址：10.10.7.53
+用户名：administrator
+密码：F#41ds62&nb242db%02a4Ysu%iW
+域名：cs.zhonghaokeji.cn
+
+上海三级分销后台登录密码：SYtidetop7799
+
+
+
+
+

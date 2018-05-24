@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>大事记</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css">
+    <script src="__PUBLIC__/js/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <!-- 引用公共头部 -->
+    {include file="common/header" /}
+    <div class="wrap" style="padding:15px 0;"> 
+        <div class="wgPower">
+            <!-- 顶部面包屑导航 -->
+            <div>
+                <p class="top_title">您现在的位置 | <a href="{:url('Gov/index')}">政府风貌</a> > | <span> 大事记 </span></p>
+            </div>              
+            <div class="bigThing_content">
+                 <h2>滑县产业集聚区发展历程</h2>
+                 {volist name="events" id="vo"}
+                     <p>{$i}、{$vo.description}</p>
+                     <p>----{$vo.title}</p>
+                     <p><img src="__IMG__{$vo.image}" alt="滑县产业集聚区管委会前身"></p>
+                {/volist}
+
+                 <!-- <p>6、第二次规划《滑县产业集聚区发展规划》（2013-2020）园区面积由15平方公里调整为24.2平方公里，主导产业调整为食品加工和装备制造，于2012年12月18日通过河南省发展和改革委员会组织的审查。新规划园区北起新鑫路，南至长虹大道，东至东环路，西以大宫河为界，东西长约8km，南北宽约3.5km，规划面积24.2km2，目前建成区面积16.73平方公里，区内常住人口15万人。</p> -->
+                 <!-- <p>第二次园区规划修编</p> -->
+                 <!-- <p><img src="__PUBLIC__/images/big_3.png" alt="第二次园区规划修编"></p> -->
+            </div> 
+        </div>
+    </div>
+     <!-- 引用公共底部 -->
+{include file="common/footer" /}
+</body>         
+</html>

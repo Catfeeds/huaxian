@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>进言献策</title>
+  <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+  <link rel="stylesheet" href="__PUBLIC__/css/advice.css">
+  <script src="__PUBLIC__/js/jquery-3.3.1.js"></script>
+</head>
+<body>
+  <!-- 引用公共头部 -->
+    {include file="common/header" /}
+  <div class="wrap">
+    <div class="center">
+      <div class="left_content">
+        <p class="top_text">留言展示<a href="javascript:;" id="more1">更多>></a></p>
+        <h6 style="width: 690px;height: 3px;margin-top: 8px;background-color: #eee;"></h6>
+        {volist name="good_message" id="vo"}
+          <div class="left_detail">
+            <p class="user">用户：{$vo.yonghu|substr=0,3}****{$vo.yonghu|substr=7}<span>{$vo.time1|strtotime|date='Y-m-d',###}</span></p>
+            <p class="question"><span>问：</span>{$vo.title}</p>
+            <p class="answer"><span>答：</span>{$vo.content}</p>
+          </div>
+        {/volist}
+        <!-- <div class="left_detail">
+          <p class="user">用户：15516558060<span>2018-05-14</span></p>
+          <p class="question"><span>问：</span>海关特殊监管区和非海关特殊监管区，开展的业务有什么区别？</p>
+          <p class="answer"><span>答：</span>海关特殊监管区域重点探索以贸易便利化为主要内容的制度创新，开展报税加工、保税物流、保税服务等业务；非海关监管区域重点探索投资体制改革，创新内陆地区开放发展机制，完善事中事后监管，积极发展高端制造业和现代服务业。</p>
+        </div> -->
+      </div>
+      <script>
+        $(function () {
+          $("#more1").on("click", function () {
+            $(".right_content").hide();
+            $(".left_content").css("width", "1010px");
+            $("h1").css('width','1010px');
+            $(".left_detail").each(function () {
+              $(this).children("p").eq(0).children("span").css('float','right');
+            });
+            $(this).hide();
+          });
+        })
+      </script>
+      <div class="right_content">
+        <a href="{:url('Message/add')}"><img class="message" src="__PUBLIC__/images/advice1.png" alt="请重新加载"></a>
+        <div class="hot_question">
+          <a class="hot_top" href="{:url('Message/hot')}">热门问题 <span>></span><span>></span><span>></span></a>
+          {volist name="hot_message" id="v1"}
+            <div class="top_one">
+              <span></span>
+              <a>{$v1.title}</a>
+            </div>
+          {/volist}
+          <!-- <div class="top_one top_all">
+            <span></span>
+            <a>群众办事百项堵点疏解行动 —— 第一季</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 引用公共底部 -->
+    {include file="common/footer" /}
+</body>
+</html>

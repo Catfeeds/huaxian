@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>党政领导</title>
+  <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+  <link rel="stylesheet" href="__PUBLIC__/css/partyLeader.css">
+</head>
+<body>
+  <!-- 引用公共头部 -->
+    {include file="common/header" /}
+
+  <div class="wrap">
+    <div class="center">
+      <!-- <p class="top_title">您现在的位置 | <a href="{:url('Gov/index')}">政府风貌</a> > | <span> 党政领导 </span></p>
+      <h1>人员排序</h1>
+      <h2>原则：1.产业聚集区。。。什么什么</h2>
+      <p>2.产业聚集区。。。什么什么</p>
+      <p>3.产业聚集区。。。什么什么</p>
+      <p>产业聚集区：{volist name="leader" id="vo"}{$vo.name}、{/volist}</p>
+      <p>锦和街道人大工委主任排名在目前产业集聚区正科级科长之后，排序为：刘会强、苏振才、赵辉、陈红岭。其他副科级人员排序按照上级文件和有关规定执行。</p>
+      <h1>人员分工</h1> -->
+      {volist name="leader" id="v1"}
+        <div class="person_detail">
+          <img src="__IMG__{$v1.image}" alt="请重新加载">
+          <h3 class="person_title">{$v1.name}</h3>
+          <!-- <h3>工作分工</h3> -->
+          <h4>{$v1.work}</h4>
+        </div>
+      {/volist}
+      <!-- <div class="person_detail">
+        <img src="__PUBLIC__/images/partyLeader1.jpg" alt="请重新加载">
+        <h3 class="person_title">宋沛哲</h3>
+        <h3>工作分工</h3>
+        <h4>产业聚集区：陈忠、后的按、着机房、李超哥、宋沛哲。区：陈忠、后的按、着机房、李超哥、宋沛哲。哈哈产业聚集区：陈忠、后的按、着机房、李超哥、宋沛哲。产业聚集区：陈忠、后的按、着机房、李超哥、宋沛哲。产业聚集区：陈忠、后的按、着机房、李超哥、宋沛哲。</h4>
+      </div> -->
+    </div>
+  </div>
+<!-- 引用公共底部 -->
+{include file="common/footer" /}
+</body>
+</html>

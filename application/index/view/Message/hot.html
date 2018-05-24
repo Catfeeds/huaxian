@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>热门问题</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/poor.css">
+</head>
+<body>
+    <!-- 引用公共头部 -->
+    {include file="common/header" /}
+<div class="wrap">
+    <div class="center">
+        <p class="top_title">您现在的位置 | <a href="{:url('Message/index')}" style="color: #666;">进言献策</a> > | <span> 热门问题 </span></p>
+        <h1>热门问题</h1>
+        <!--<script>
+          var num = 1;
+          $("h1").on("click", function () {
+            $(this).addClass('bord').siblings().removeClass('bord');
+            num = $(this).attr('id');
+            $(".file_list").eq(num).addClass('toggle').siblings().removeClass('toggle');
+          })
+        </script>-->
+        <!--<div style="clear: both;"></div>-->
+        <div class="file_list">
+            <div class="file_list_center">
+                {volist name="hot_message" id="vo"}
+                    <div class="file_detail">{$vo.title}</div>
+                {/volist}
+                <!-- <div class="file_detail">热门问题热门问题热门问题热门问题热门问题</div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 引用公共底部 -->
+{include file="common/footer" /}
+</body>
+</html>

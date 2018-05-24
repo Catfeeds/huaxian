@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>大事记</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/poor.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/swiper-4.2.2.min.css">
+    <script src="__PUBLIC__/js/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <!-- 引用公共头部 -->
+    {include file="common/header" /}
+<div class="wrap">
+    <div class="center">
+        <p class="top_title">您现在的位置 | <a href="{:url('Index/index')}">首页</a> > | <span> 大事记 </span></p>
+        <div class="head1">滑县产业聚集区发展历程</div>
+        <style>
+            .file_list_center {
+                overflow: hidden;
+                height: 500px;
+            }
+            .head1 {
+                width: 100%;
+                height: 80px;
+                text-align: center;
+                font: bold 20px/80px Arial,Verdana,"\5b8b\4f53";
+            }
+            .swiper-container p {
+                width: 90%;
+                margin:0 auto;
+                height: 140px;
+                overflow: hidden;
+                text-align: center;
+                font-size: 16px;
+                line-height: 20px;
+                margin-top: 20px;
+            }
+            .swiper-container img {
+                width: 90%;
+                height: 320px;
+                text-align: top;
+                display: block;
+                margin: 0 auto;
+            }
+            .swiper-container {
+                width: 930px;
+                height: 500px;
+            }
+            .swiper-slide {
+                background-repeat: no-repeat;
+                background-position: center 170px;
+                /*background-size: cover;*/
+                width: 100%;
+                height: 500px;
+                background-size: 90% 310px;
+            }
+            .swiper-button-next,.swiper-button-prev {
+                top: 68%;
+            }
+        </style>
+        <div class="file_list">
+            <div class="file_list_center">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        {volist name="events" id="vo"}
+                            <!-- <div class="swiper-slide" style="background-image:url('__IMG__{$vo.image}')"> -->
+                            <div class="swiper-slide">
+                                <p>{$i}、{$vo.description}<br>----{$vo.title}</p>
+                                <img src="__IMG__{$vo.image}"/>
+                            </div>
+                        {/volist}
+
+                        <div class="swiper-slide" style="background-image:url(__PUBLIC__/images/big_1.png)"><p>2018年年水电费健康时间放得开时空大家疯狂的健身房年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年----------滑县成立</p></div>
+                        <div class="swiper-slide" style="background-image:url(__PUBLIC__/images/big_2.png)"><p>2019年年水电费健康时间放得开时空大家疯狂的健身房年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年----------滑县成立</p></div>
+                        <div class="swiper-slide" style="background-image:url(__PUBLIC__/images/big_3.png)"><p>2010年年水电费健康时间放得开时空大家疯狂的健身房年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年----------滑县成立</p></div>
+                    </div>
+
+                    <!-- Add Pagination -->
+                   <!-- <div class="swiper-pagination"></div>-->
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <!-- Swiper JS -->
+                <script src="__PUBLIC__/js/swiper-4.2.2.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var mySwiper = new Swiper ('.swiper-container', {
+                        loop: true,
+                        autoplay: {
+                            disableOnInteraction: false,//用户点击之后不停止自动轮播,true为用户点击后停止自动轮播
+                            delay: 1500
+                        },
+
+                        effect: 'flip', //切换效果
+                        grabCursor: true,
+                        speed: 2000,  //滑块切换速度
+                        // 如果需要分页器
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                            renderBullet: function (index, className) {
+                                return '<span class="' + className + '">' + (index + 1) + '</span>';
+                            },
+                        },
+                        // 如果需要前进后退按钮
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev'
+                        },
+                    })
+                    $('.swiper-slide').mouseenter(function () {
+                        mySwiper.autoplay.stop();
+                    })
+                    $('.swiper-slide').mouseleave(function () {
+                        mySwiper.autoplay.start();
+                    })
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 引用公共底部 -->
+{include file="common/footer" /}
+</body>
+</html>

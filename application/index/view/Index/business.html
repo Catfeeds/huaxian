@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>招商引资</title>
+  <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+  <link rel="stylesheet" href="__PUBLIC__/css/inviteInvestment.css">
+</head>
+<body>
+  <!-- 引用公共头部 -->
+    {include file="common/header" /}
+  <div class="wrap">
+    <div class="center">
+      <p class="top_title">您现在的位置 | <a href="{:url('Index/index')}">首页</a> > | <span> 招商引资 </span></p>
+      <div class="content">
+        {$business.content}
+      </div>
+      <div class="poor_detail">
+        <p class="poor_title">扶贫信息</p>
+        <ul class="poor_list">
+          {volist name="help" id="vo"}
+            <li><a href="{:url('Index/helpzhengcedetail',array('id'=>$vo.id))}">{$vo.title}</a><span>查看详情</span></li>
+          {/volist}
+          <!-- <li><a href="#">云峰非也云峰非也云峰</a><span>查看详情</span></li> -->
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 引用公共底部 -->
+{include file="common/footer" /}
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+  (function(){
+    var list = $('.poor_list li').length;
+    if(list%2 === 1){
+      list += 1;
+    }
+    $('.poor_list').height($(".poor_list li").height() * (list/2));
+  })();
+</script>
+</html>

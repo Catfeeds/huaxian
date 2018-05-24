@@ -1,0 +1,2 @@
+本地项目名称：huaxian
+本地后台管理员：admin   admin

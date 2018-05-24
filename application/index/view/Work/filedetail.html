@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>文件下载</title>
+  <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+  <link rel="stylesheet" href="__PUBLIC__/css/fileDownloadDetail.css">
+</head>
+<body>
+  <!-- 引用公共头部 -->
+    {include file="common/header" /}
+  <div class="wrap">
+    <div class="center">
+      <p class="top_title">您现在的位置 | <a href="{:url('Work/index')}">办事指南</a> > | <span> 文件下载 </span></p>
+      <div class="download_button">
+        <a href="{:url('Work/download',array('id'=>$file.id))}">
+          <img src="__PUBLIC__/images/download1.png" alt="请重新加载">
+          点击下载
+        </a>
+      </div>
+      <div class="content">
+        {$file.content}
+      </div>
+    </div>
+  </div>
+  <!-- 引用公共底部 -->
+{include file="common/footer" /}
+</body>
+</html>

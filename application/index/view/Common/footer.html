@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/base-base.css">
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/base.js"></script>
+    <title>baseFooter</title>
+   
+</head>
+<body> -->
+    <div class="wrap" style="background: none;margin-top: 20px">
+        <!--footer开始-->
+        <div class="footer">
+            <div class="link">
+                <h3>友情链接</h3>
+                <div class="link-to clearfix">
+                    {volist name="link" id="vo"}
+                    <a href="##"><img src="__IMG__/{$vo.image}" alt=""></a>
+                    <!-- <a href="##"><img src="__PUBLIC__/images/link2.png" alt=""></a> -->
+                    <!-- <a href="##"><img src="__PUBLIC__/images/link3.png" alt=""></a> -->
+                    <!-- <a href="##"><img src="__PUBLIC__/images/link4.png" alt=""></a> -->
+                    <!-- <a href="##"><img src="__PUBLIC__/images/link5.png" alt=""></a> -->
+                    {/volist}
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="bottom">
+                <div class="first">
+                    <!-- <a href="##">网站首页</a><span>|</span>
+                    <a href="##">供应服务</a><span>|</span>
+                    <a href="##">新闻中心</a><span>|</span>
+                    <a href="##">荣誉资质</a><span>|</span>
+                    <a href="##">人才招聘</a><span>|</span>
+                    <a href="##">联系方式</a><span>|</span>
+                    <a href="##">举报</a> -->
+                    <a href="{:url('Index/index')}">首页</a><span>|</span>
+                    <a href="{:url('Gov/index')}">政治风貌</a><span>|</span>
+                    <a href="{:url('City/index')}">城市建设</a><span>|</span>
+                    <a href="{:url('Company/index')}">企业风采</a><span>|</span>
+                    <a href="{:url('Work/index')}">办事指南</a><span>|</span>
+                    <a href="{:url('Message/index')}">进言献策</a><span>|</span>
+                    <a href="{:url('Call/call')}">联系我们</a><span>|</span>
+                    <a href="http://192.168.18.228/huaxian/public/index.php/admin/index/index.html">后台管理</a>
+                </div>
+                <div class="second">
+                    <span>备案链接：</span>
+                    <a href="##">发改委备案</a>
+                    <span>|</span>
+                    <a href="##">环境影响评价备案</a>
+                </div>
+                <div class="last">
+                    <span>©2018  河南省滑县新区工业园产业聚集区  版权所有</span>
+                    <span>技术支持：河南中浩信息科技有限公司</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- </body> -->
+<!-- </html> -->

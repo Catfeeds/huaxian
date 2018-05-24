@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>招商引资详情</title>
+  <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+  <link rel="stylesheet" href="__PUBLIC__/css/fileDownloadDetail.css">
+</head>
+<body>
+  <!-- 引用公共头部 -->
+    {include file="common/header" /}
+  <div class="wrap">
+    <div class="center">
+      <p class="top_title">您现在的位置 | <a href="{:url('Gov/index')}">政府风貌</a> > | <span> 招商引资详情 </span></p>
+      <!-- <div class="download_button">
+        <a href="#">
+          <img src="__PUBLIC__/images/download1.png" alt="请重新加载">
+          点击下载
+        </a>
+      </div> -->
+      <div class="content">
+        {$business.content}
+      </div>
+    </div>
+  </div>
+  <!-- 引用公共底部 -->
+{include file="common/footer" /}
+</body>
+</html>

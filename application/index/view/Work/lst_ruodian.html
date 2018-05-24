@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>弱电接入</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css">
+    <script src="__PUBLIC__/js/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <!-- 引用公共头部 -->
+    {include file="common/header" /}
+    <div class="wrap" style="padding:15px 0;"> 
+        <div class="wgPower">
+            <!-- 顶部面包屑导航 -->
+            <div>
+                <p class="top_title">您现在的位置 | <a href="{:url('Work/index')}">办事指南</a> > | <span> 弱电接入 </span></p>
+            </div>              
+            <div class="wgPower_content">
+                 <h2>—— 弱电接入 ——</h2>
+                 <h3>一、 申报材料</h3>
+                 {$ruodian.content}
+                 <h3>二、 地址</h3>  
+                 <p>{$ruodian.address}</p>  
+            </div> 
+        </div>
+    </div>
+    <!-- 引用公共底部 -->
+    {include file="common/footer" /}
+</body>         
+</html>

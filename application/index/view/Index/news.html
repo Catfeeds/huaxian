@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>更多新闻</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/poor.css">
+    <script src="__PUBLIC__/js/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <!-- 引用公共头部 -->
+    {include file="common/header" /}
+    <div class="wrap">
+    <div class="center">
+        <p class="top_title">您现在的位置 | <a href="{:url('Index/index')}">首页</a> > | <span> 新闻动态 </span></p>
+        <h1>更多新闻</h1>
+        <!--<script>
+          var num = 1;
+          $("h1").on("click", function () {
+            $(this).addClass('bord').siblings().removeClass('bord');
+            num = $(this).attr('id');
+            $(".file_list").eq(num).addClass('toggle').siblings().removeClass('toggle');
+          })
+        </script>-->
+        <!--<div style="clear: both;"></div>-->
+        <div class="file_list">
+            <div class="file_list_center">
+                {volist name="news" id="vo"}
+                    <div class="file_detail"><a href="{:url('Index/newsdetail',array('id'=>$vo.id))}" style="color: #666;">{$vo.title}</a></div>
+                {/volist}
+                <!-- <div class="file_detail">李克强李克强李克强李克强李克强近平总书记</div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 引用公共底部 -->
+{include file="common/footer" /}
+</body>
+</html>

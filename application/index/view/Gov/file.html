@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>政府文件</title>
+  <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+  <link rel="stylesheet" href="__PUBLIC__/css/fileDownload.css">
+</head>
+<body>
+  <!-- 引用公共头部 -->
+    {include file="common/header" /}
+  <div class="wrap">
+    <div class="center">
+      <p class="top_title">您现在的位置 | <a href="{:url('Gov/index')}">政府风貌</a> > | <span> 政府文件 </span></p>  
+      <h1>政府文件</h1>
+      <div class="file_list">
+        <div class="file_list_center">
+          {volist name="file" id="vo"}
+            <div class="file_detail"><a href="{:url('Gov/filedetail',array('id'=>$vo.id))}" style="color: #666;">{$vo.file}</a></div>
+          {/volist}
+          <!-- <div class="file_detail">滑县产业扶贫加工基地金泰服装建设</div> -->
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 引用公共底部 -->
+{include file="common/footer" /}
+</body>
+</html>

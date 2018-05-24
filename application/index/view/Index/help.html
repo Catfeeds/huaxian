@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>扶贫攻坚</title>
+  <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+  <script src="__PUBLIC__/js/jquery-3.3.1.js"></script>
+</head>
+<body>
+   <!-- 引用公共头部 -->
+    {include file="common/header" /}
+      <link rel="stylesheet" href="__PUBLIC__/css/poor.css">
+
+  <div class="wrap">
+    <div class="center">
+      <p class="top_title">您现在的位置 | <a href="{:url('Index/index')}">首页</a> > | <span> 扶贫攻坚 </span></p>  
+      <h1>扶贫动态
+        <a href="{:url('Index/helpdongtai')}" class="right">更多>></a>
+      </h1>
+      <!--<script>
+        var num = 1;
+        $("h1").on("click", function () {
+          $(this).addClass('bord').siblings().removeClass('bord');
+          num = $(this).attr('id');
+          $(".file_list").eq(num).addClass('toggle').siblings().removeClass('toggle');
+        })
+      </script>-->
+      <!--<div style="clear: both;"></div>-->
+      <style>
+        .file_list_center {
+          overflow: hidden;
+          height: 380px;
+        }
+      </style>
+      <div class="file_list">
+        <div class="file_list_center">
+          {volist name="helpdongtai" id="vo"}
+            <div class="file_detail"><a href="{:url('Index/helpdongtaidetail',array('id'=>$vo.id))}" style="color: #666;">{$vo.title}</a></div>
+          {/volist}
+          <!-- <div class="file_detail">滑县产业扶贫加工基地金泰服装建设</div> -->
+        </div>
+      </div>
+      <h1>扶贫政策
+        <a href="{:url('Index/helpzhengce')}" class="right">更多>></a>
+      </h1>
+      <div class="file_list">
+        <div class="file_list_center">
+          {volist name="help" id="v1"}
+            <div class="file_detail"><a href="{:url('Index/helpzhengcedetail',array('id'=>$v1.id))}" style="color: #666;">{$v1.title}</a></div>
+          {/volist}
+          <!-- <div class="file_detail">滑县产业扶贫加工基地金泰服装333333建设</div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 引用公共底部 -->
+{include file="common/footer" /}
+</body>
+</html>

@@ -1,0 +1,12 @@
+数据库地址 	61.163.210.29/phpmyadmin
+用户名  	root
+密码    	fwsy718zih
+
+后台地址	http://zh.banliego.com/oybl/web/index.php?c=account&a=display&
+账号		admin
+密码		123456
+
+
+服务器地址：61.163.210.29
+账号：administrator
+密码：fdshfee%fkd;isnfi&pOH(F$%njiRdhjb$%^

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>主导产业培训详情</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="__PUBLIC__/css/base.css">
+    <!-- <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"> -->
+    <link rel="stylesheet" href="__PUBLIC__/css/fileDownloadDetail.css">
+    <script src="__PUBLIC__/js/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <!-- 引用公共头部 -->
+    {include file="common/header" /}
+    <div class="wrap" style="padding:15px 0;"> 
+        <div class="wgPower">
+            <!-- 顶部面包屑导航 -->
+            <div>
+                <p class="top_title">您现在的位置 | <a href="{:url('City/index')}">城市建设</a> > | <span> 主导产业培训详情 </span></p>
+            </div>              
+            <div class="content">
+                {$main.content}
+            </div>
+        </div>
+    </div>
+     <!-- 引用公共底部 -->
+{include file="common/footer" /}
+</body>         
+</html>
