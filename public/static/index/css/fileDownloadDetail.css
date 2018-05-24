@@ -1,0 +1,47 @@
+.center {
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.top_title {
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 14px;
+}
+.top_title a {
+  color: #666;
+}
+.top_title span {
+  color: #6391f1;
+}
+.download_button {
+  position: absolute;
+  right: 70px;
+  top: 20px;
+}
+.download_button img {
+  width: 27px;
+  height: 27px;
+}
+.download_button a {
+  position: relative;
+  top: 3px;
+  color: #000;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.content {
+  width: 1010px;
+  margin-top: 15px;
+  margin-left: 3%;
+  padding: 20px 25px 50px 25px;
+  font-size: 16px;
+  background-color: #f0f3f6;
+  word-wrap: word-break;
+}
