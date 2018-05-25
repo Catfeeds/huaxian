@@ -91,13 +91,28 @@
             </div>
             <div class="top-nav">
                 <ul>
-                    <li class="current"><a href="{:url('Index/index')}">首页</a></li>
-                    <li><a href="{:url('Gov/index')}">政治风貌</a></li>
-                    <li><a href="{:url('City/index')}">城市建设</a></li>
-                    <li><a href="{:url('Company/index')}">企业风采</a></li>
-                    <li><a href="{:url('Work/index')}">办事指南</a></li>
-                    <li><a href="{:url('Message/index')}">进言献策</a></li>
-                    <li><a href="{:url('Call/call')}">联系我们</a></li>
+                    <li tipName='产品聚集区官网'><a href="{:url('Index/index')}">首页</a></li>
+                    <li tipName='政府风貌'><a href="{:url('Gov/index')}">政治风貌</a></li>
+                    <li tipName='城市建设'><a href="{:url('City/index')}">城市建设</a></li>
+                    <li tipName='企业风采'><a href="{:url('Company/index')}">企业风采</a></li>
+                    <li tipName='办事指南'><a href="{:url('Work/index')}">办事指南</a></li>
+                    <li tipName='进言献策'><a href="{:url('Message/index')}">进言献策</a></li>
+                    <li tipName='联系我们'><a href="{:url('Call/call')}">联系我们</a></li>
+                    <script>
+                    $(function(){
+                        /*var str = window.location;
+                        str = str.toString();
+                        
+                        alert(str.length);*/
+                        var name = $('title').text();
+                        $('.top-nav li').each(function(){
+                            if($(this).attr('tipName') == name){
+                                $(this).addClass('current').siblings().removeClass('current');
+                            }
+                        })
+                    })
+
+                    </script>
                 </ul>
             </div>
         </div>
