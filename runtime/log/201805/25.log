@@ -11335,6 +11335,7 @@
 [ info ] [ LOG ] INIT File
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000684s ] mysql:dbname=huaxian;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `tr_link` [ RunTime:0.008569s ]
 [ sql ] [ SQL ] SELECT * FROM `tr_link` ORDER BY id desc LIMIT 5 [ RunTime:0.000338s ]
@@ -14291,6 +14292,8 @@
 >>>>>>> 190316f4b4e7f62b5ca6e8c789b3916837b4b81f
 >>>>>>> 33c8a3e34a5d6c623c778855e81fab2a1805dc52
 =======
+=======
+>>>>>>> develop
 [ sql ] [ DB ] CONNECT:[ UseTime:0.001959s ] mysql:dbname=huaxian;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `tr_link` [ RunTime:0.005714s ]
 [ sql ] [ SQL ] SELECT * FROM `tr_link` ORDER BY id desc LIMIT 5 [ RunTime:0.000529s ]
@@ -14304,6 +14307,7 @@
 [ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id desc LIMIT 4 [ RunTime:0.000460s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `tr_imgs` [ RunTime:0.005381s ]
 [ sql ] [ SQL ] SELECT * FROM `tr_imgs` ORDER BY id desc [ RunTime:0.000498s ]
+<<<<<<< HEAD
 >>>>>>> develop
 ---------------------------------------------------------------
 [ 2018-05-25T15:09:26+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/index/gov/index.html
@@ -26647,3 +26651,8 @@
   'auto_start' => true,
 )
 [ info ] [ LOG ] INIT File
+=======
+=======
+>>>>>>> 14bf434e0a074b208d824529106da1e98a590fb0
+>>>>>>> aa67d85da8e30cb8f8d4f89958b2a05f8f6e10c9
+>>>>>>> develop
