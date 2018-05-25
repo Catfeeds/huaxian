@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"D:\phpStudy\WWW\huaxian\public/../application/index\view\city\index.html";i:1527219400;s:75:"D:\phpStudy\WWW\huaxian\public/../application/index\view\common\header.html";i:1527215966;s:75:"D:\phpStudy\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527214262;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"D:\phpStudy\WWW\huaxian\public/../application/index\view\city\index.html";i:1527237396;s:75:"D:\phpStudy\WWW\huaxian\public/../application/index\view\common\header.html";i:1527239288;s:75:"D:\phpStudy\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527214262;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -103,13 +103,28 @@
             </div>
             <div class="top-nav">
                 <ul>
-                    <li class="current"><a href="<?php echo url('Index/index'); ?>">首页</a></li>
-                    <li><a href="<?php echo url('Gov/index'); ?>">政治风貌</a></li>
-                    <li><a href="<?php echo url('City/index'); ?>">城市建设</a></li>
-                    <li><a href="<?php echo url('Company/index'); ?>">企业风采</a></li>
-                    <li><a href="<?php echo url('Work/index'); ?>">办事指南</a></li>
-                    <li><a href="<?php echo url('Message/index'); ?>">进言献策</a></li>
-                    <li><a href="<?php echo url('Call/call'); ?>">联系我们</a></li>
+                    <li tipName='产品聚集区官网'><a href="<?php echo url('Index/index'); ?>">首页</a></li>
+                    <li tipName='政府风貌'><a href="<?php echo url('Gov/index'); ?>">政治风貌</a></li>
+                    <li tipName='城市建设'><a href="<?php echo url('City/index'); ?>">城市建设</a></li>
+                    <li tipName='企业风采'><a href="<?php echo url('Company/index'); ?>">企业风采</a></li>
+                    <li tipName='办事指南'><a href="<?php echo url('Work/index'); ?>">办事指南</a></li>
+                    <li tipName='进言献策'><a href="<?php echo url('Message/index'); ?>">进言献策</a></li>
+                    <li tipName='联系我们'><a href="<?php echo url('Call/call'); ?>">联系我们</a></li>
+                    <script>
+                    $(function(){
+                        /*var str = window.location;
+                        str = str.toString();
+                        
+                        alert(str.length);*/
+                        var name = $('title').text();
+                        $('.top-nav li').each(function(){
+                            if($(this).attr('tipName') == name){
+                                $(this).addClass('current').siblings().removeClass('current');
+                            }
+                        })
+                    })
+
+                    </script>
                 </ul>
             </div>
         </div>
@@ -361,7 +376,7 @@
                         </div>-->
                          <div class="city_content">
                              <h3>基础设施</h3>
-                             <p>当日，昆明地铁4、5号线正在进行建设，由于施工影响，穿城而过的一段百年滇越铁路被拆除，“老铁路”为“新铁路”建设让步...当日，昆明地铁4、5号线正在进行建设，由于施工影响，穿城而过的一段百年滇越铁路被拆除，“老铁路”为“新铁路”建设让步...当日，昆明地铁4、5号线正在进行建设，由于施工影响，穿城而过的一段百年滇越铁路被拆除，“老铁路”为“新铁路”建设让步...<a href="<?php echo url('City/basic'); ?>">详情</a></p>
+                             <p>当日，昆明地铁4、5号线正在进行建设，由于施工影响，穿城而过的一段百年滇越铁路被拆除，“老铁路”为“新铁路”建设让步...当日，昆明地铁4、5号线正在进行建设，由于施工影响，穿城而过的一段百年滇越铁路被拆除，“老铁路”为“新铁路”建设让步...当日，昆明地铁4、5号线正在进行建设，由于施工影响，穿城而过的一段百年滇越铁路被拆除，“老铁路”为“新铁路”建设让步...<a href="<?php echo url('City/basic'); ?>"> v 详情</a></p>
 
                          </div>
                      <!--</div>-->
