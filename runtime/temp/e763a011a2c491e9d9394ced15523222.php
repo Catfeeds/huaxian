@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"D:\phpStudy\WWW\huaxian\public/../application/index\view\work\index.html";i:1527217166;s:75:"D:\phpStudy\WWW\huaxian\public/../application/index\view\common\header.html";i:1527215966;s:75:"D:\phpStudy\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527214262;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:72:"D:\phpStudy\WWW\huaxian\public/../application/index\view\work\index.html";i:1527229233;s:75:"D:\phpStudy\WWW\huaxian\public/../application/index\view\common\header.html";i:1527239335;s:75:"D:\phpStudy\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527214262;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -103,13 +103,28 @@
             </div>
             <div class="top-nav">
                 <ul>
-                    <li class="current"><a href="<?php echo url('Index/index'); ?>">首页</a></li>
-                    <li><a href="<?php echo url('Gov/index'); ?>">政治风貌</a></li>
-                    <li><a href="<?php echo url('City/index'); ?>">城市建设</a></li>
-                    <li><a href="<?php echo url('Company/index'); ?>">企业风采</a></li>
-                    <li><a href="<?php echo url('Work/index'); ?>">办事指南</a></li>
-                    <li><a href="<?php echo url('Message/index'); ?>">进言献策</a></li>
-                    <li><a href="<?php echo url('Call/call'); ?>">联系我们</a></li>
+                    <li tipName='产品聚集区官网'><a href="<?php echo url('Index/index'); ?>">首页</a></li>
+                    <li tipName='政府风貌'><a href="<?php echo url('Gov/index'); ?>">政治风貌</a></li>
+                    <li tipName='城市建设'><a href="<?php echo url('City/index'); ?>">城市建设</a></li>
+                    <li tipName='企业风采'><a href="<?php echo url('Company/index'); ?>">企业风采</a></li>
+                    <li tipName='办事指南'><a href="<?php echo url('Work/index'); ?>">办事指南</a></li>
+                    <li tipName='进言献策'><a href="<?php echo url('Message/index'); ?>">进言献策</a></li>
+                    <li tipName='联系我们'><a href="<?php echo url('Call/call'); ?>">联系我们</a></li>
+                    <script>
+                    $(function(){
+                        /*var str = window.location;
+                        str = str.toString();
+                        
+                        alert(str.length);*/
+                        var name = $('title').text();
+                        $('.top-nav li').each(function(){
+                            if($(this).attr('tipName') == name){
+                                $(this).addClass('current').siblings().removeClass('current');
+                            }
+                        })
+                    })
+
+                    </script>
                 </ul>
             </div>
         </div>
@@ -315,9 +330,13 @@
                     </style>-->
                     <ul>
                         <?php if(is_array($file) || $file instanceof \think\Collection || $file instanceof \think\Paginator): $i = 0; $__LIST__ = $file;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                            <li><a href="<?php echo url('Work/download',array('id'=>$vo['id'])); ?>" title="<?php echo $vo['file']; ?>"><span>【<?php echo $vo['address']; ?>】</span><span class="overhide"><?php echo $vo['file']; ?></span><span>[<?php echo $vo['time']; ?>]</span></a></li>
+                            <li>
+                                <a href="<?php echo url('Work/download',array('id'=>$vo['id'])); ?>" title="<?php echo $vo['file']; ?>">
+                                    <span>【<?php echo $vo['address']; ?>】</span><span class="overhide"><?php echo $vo['file']; ?></span><span>[<?php echo $vo['time']; ?>]</span>
+                                </a>
+                            </li>
                         <?php endforeach; endif; else: echo "" ;endif; ?>
-                        <li><a href="#"><span>【金光路办事处】</span><span class="overhide">金光路党工委书记王文斌对柳湖办事处开展仓储物流消防安全检查工作园口村搅拌站环...</span><span>[2018-04-28 15:40]</span></a></li>
+                        <!-- <li><a href="#"><span>【金光路办事处】</span><span class="overhide">金光路党工委书记王文斌对柳湖办事处开展仓储物流消防安全检查工作园口村搅拌站环...</span><span>[2018-04-28 15:40]</span></a></li> -->
                     </ul>
                 </div>
             </div> 
