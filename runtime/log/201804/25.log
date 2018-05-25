@@ -1,0 +1,99 @@
+---------------------------------------------------------------
+[ 2018-04-25T08:17:21+08:00 ] 192.168.18.228 192.168.16.195 GET /huaxian/public/index.php/admin/index/index.html
+[ info ] 192.168.18.228/huaxian/public/index.php/admin/index/index.html [运行时间：0.309315s][吞吐率：3.23req/s] [内存消耗：1,732.96kb] [文件加载：49]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\WWW\huaxian\thinkphp\tpl\dispatch_jump1.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-25T08:17:21+08:00 ] 192.168.18.228 192.168.16.195 GET /huaxian/public/static/admin/css/bootstrap.min.css
+[ info ] 192.168.18.228/huaxian/public/static/admin/css/bootstrap.min.css [运行时间：0.026859s][吞吐率：37.23req/s] [内存消耗：1,410.51kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/css,*/*;q=0.1',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.18.228/huaxian/public/index.php/admin/index/index.html',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-25T08:17:25+08:00 ] 192.168.18.228 192.168.16.195 GET /huaxian/public/index.php/admin/login/login.html
+[ info ] 192.168.18.228/huaxian/public/index.php/admin/login/login.html [运行时间：0.042783s][吞吐率：23.37req/s] [内存消耗：1,731.82kb] [文件加载：47]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.18.228/huaxian/public/index.php/admin/index/index.html',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\Admin\controller\Login->login[ E:\WWW\huaxian\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] E:\WWW\huaxian\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"E:\WWW\huaxian\public/../application/index\view\index\file.html";i:1527068063;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527125376;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527071150;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"E:\WWW\huaxian\public/../application/index\view\index\file.html";i:1527068063;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527130003;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527071150;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,9 +29,15 @@
         <div class="top">
             <div class="top-login">
                 <div class="right">
-                    <a href="##" onclick="loginShow()">登录</a>
-                    <span>|</span>
-                    <a href="##" onclick="newShow()">注册</a>
+                    <?php if(session('username') != ''): ?>
+                        <a href="##" >欢迎您：<?php echo session('username')?></a>
+                        <span>|</span>
+                        <a href="<?php echo url('Login/logout'); ?>" onclick="newShow()">退出</a>
+                    <?php else: ?>
+                        <a href="##" onclick="loginShow()">登录</a>
+                        <span>|</span>
+                        <a href="##" onclick="newShow()">注册</a>
+                    <?php endif; ?>
                 </div>
             </div>
             <!-- <div class="top-center">
@@ -117,22 +123,30 @@
                     <i></i>
                     <b></b>
                 </div>
-                <div class="popup_input" style="margin-top: 70px;">
-                    <span>手机号</span>
-                    <input type="text">
-                </div>
-                <div class="popup_input popup_code">
-                    <span>输入验证码</span>
-                    <input type="text">
-                    <button>获取验证码</button>
-                </div>
-                <div class="popup_input popup_pwd">
-                    <span>设置密码</span>
-                    <input type="text">
-                </div>
-                <a href="#" class="zhuce">注册</a>
-                <a href="javascript:;" class="popup_login">立即登录</a>
-                <a href="javascript:;" class="popup_forget">忘记密码</a>
+                <form action="<?php echo url('Login/register'); ?>" method="post" class="login3" enctype="multipart/form-data">
+                    <div class="popup_input" style="margin-top: 70px;">
+                        <span>手机号</span>
+                        <input type="text" name="username" placeholder="请输入您有效的手机号码">
+                    </div>
+                    <!-- <div class="popup_input popup_code">
+                        <span>输入验证码</span>
+                        <input type="text">
+                        <button>获取验证码</button>
+                    </div> -->
+                    <div class="popup_input popup_pwd">
+                        <span>设置密码</span>
+                        <input type="password" name="password" placeholder="请输入密码">
+                    </div>
+                    <div class="popup_input popup_pwd">
+                        <span>确认密码</span>
+                        <input type="password" name="repwd" placeholder="请再次输入密码" value="">
+                    </div>
+                    <button class="zhuce"><!-- <a href="#" class="zhuce"> -->注册<!-- </a> --></button>
+                    <a href="javascript:;" class="popup_login" style="border-right: none;margin: 0 auto;display: block;padding-right: 0;width: 60px;text-align: center;">立即登录</a>
+                </form>
+                
+                
+                <!-- <a href="javascript:;" class="popup_forget">忘记密码</a> -->
             </div>
         </div>
 
@@ -151,18 +165,30 @@
                     <i></i>
                     <b></b>
                 </div>
-                <div class="popup_input" style="margin-top: 70px;">
-                    <span>手机号</span>
-                    <input type="text">
-                </div>
-                <div class="popup_input">
-                    <span>密&nbsp;&nbsp;&nbsp;码</span>
-                    <input type="text" style="margin-left: 29px;">
-                </div>
 
-                <a href="#" class="zhuce">登录</a>
-                <a href="javascript:;" class="popup_new" style="    width: 114px;margin-top: 43px;margin-left: 250px;display: inline-block;color: #000;font-size: 14px;border-right: 1px solid #777;">注册新账号</a>
-                <a href="javascript:;" class="popup_forget">忘记密码</a>
+
+
+                <style type="text/css">
+                    form.login3 {width: 600px;margin: 0 auto;}
+                </style>
+
+
+
+
+                <form action="<?php echo url('Login/login'); ?>" method="post" class="login3" enctype="multipart/form-data">
+                    <div class="popup_input" style="margin-top: 70px;">
+                        <span>手机号</span>
+                        <input type="text" placeholder="请输入登录账号" name="username">
+                    </div>
+                    <div class="popup_input">
+                        <span>密&nbsp;&nbsp;&nbsp;码</span>
+                        <input type="password" style="margin-left: 29px;" name="password" placeholder="请输入密码">
+                    </div>
+                    <button class="zhuce"><!-- <a href="#" class="zhuce"> -->登录<!-- </a> --></button>
+                    <a href="javascript:;" class="popup_new" style="    width: 114px;margin:0 auto; margin-top: 43px;display: block;color: #000; text-align: center;font-size: 14px;">注册新账号</a>
+                </form>
+                
+                <!-- <a href="javascript:;" class="popup_forget">忘记密码</a> -->
             </div>
         </div>
 
