@@ -44,11 +44,17 @@
 }
 .usAbout ul li {
 	float: left;
-    width: 30%;
+    width: 28%;
+    padding-right: 15px; 
     text-align: center;
     margin-left: 2%;
     background-color: #eee;
     font-size: 16px;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap; //文本不换行，这样超出一行的部分被截取，显示...
 }
 .usAbout ul li img {
     width: 25px;
@@ -131,10 +137,12 @@
     font-size: 14px;
     line-height: 25px;
     margin-bottom: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 .city_content p a {
 	position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 0;
     color: red;
 }
@@ -334,8 +342,9 @@
     bottom: 5px;
 }
 .mid_content_download a span.overhide {
-    width: 225px;
+    width: 150px;
     overflow: hidden;
+    padding-left: 50px;
     text-overflow: ellipsis;
     white-space: nowrap;
     display: inline-block;
@@ -363,7 +372,8 @@
     padding: 20px;
 }
 .bottom_content_img img {
-    width: 90%;
+    width: 100%;
+    height: auto;
 }
 .work_content img {
     width: 30px;

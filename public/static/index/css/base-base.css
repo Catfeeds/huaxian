@@ -8,10 +8,10 @@
 .top .top-login .right {
     margin-right: 67px;
     margin-top: 24px;
-    font-size: 18px;
 }
 .top .top-login .right a {
     color: #2a4684;
+    font-size: 18px;
 }
 .top .top-login .right a:hover {
     color: #c40000;
@@ -51,7 +51,7 @@
 }
 .top .top-nav {
     width: 100%;
-    height: 66px;
+    height: 50px;
     background-color: #fff;
 }
 .top .top-nav ul {
@@ -64,27 +64,27 @@
     text-align: center;
     border-right: 1px solid #fff;
     color: #fff;
-    font: 500 20px/66px "Microsoft YaHei";
+    font: 500 20px/50px "Microsoft YaHei";
     cursor: pointer;
-    background: url(../images/首页.png) no-repeat 40px 17px #324d8a;
+    background: url(../images/首页.png) no-repeat 40px 11px #324d8a;
 }
 .top .top-nav ul li:nth-child(2) {
-    background: url(../images/政府风貌.png) no-repeat 17px 17px #324d8a
+    background: url(../images/政府风貌.png) no-repeat 17px 11px #324d8a
 }
 .top .top-nav ul li:nth-child(3) {
-    background: url(../images/城市建设.png) no-repeat 17px 17px #324d8a
+    background: url(../images/城市建设.png) no-repeat 17px 11px #324d8a
 }
 .top .top-nav ul li:nth-child(4) {
-    background: url(../images/企业风采.png) no-repeat 17px 17px #324d8a
+    background: url(../images/企业风采.png) no-repeat 17px 11px #324d8a
 }
 .top .top-nav ul li:nth-child(5) {
-    background: url(../images/办事指南.png) no-repeat 17px 17px #324d8a
+    background: url(../images/办事指南.png) no-repeat 17px 11px #324d8a
 }
 .top .top-nav ul li:nth-child(6) {
-    background: url(../images/进言献策.png) no-repeat 17px 17px #324d8a
+    background: url(../images/进言献策.png) no-repeat 17px 11px #324d8a
 }
 .top .top-nav ul li:nth-child(7) {
-    background: url(../images/联系我们%20.png) no-repeat 17px 17px #324d8a
+    background: url(../images/联系我们%20.png) no-repeat 17px 11px #324d8a
 }
 .top .top-nav ul li a {
     display: block;
@@ -93,7 +93,7 @@
     padding-left: 40px;
     text-align: center;
     color: #fff;
-    font: 500 20px/66px "Microsoft YaHei";
+    font: 500 20px/50px "Microsoft YaHei";
     cursor: pointer;
 }
 .top .top-nav ul li.current {
@@ -168,45 +168,46 @@
     margin: 20px 0;
 }
 .footer .bottom .first {
-    width: 626px;
+    width: 620px;
     height: 32px;
     margin: 10px auto;
-    font: 400 14px/32px "Microsoft YaHei";
 }
 .footer .bottom .first a,.footer .bottom .first span {
     color: #333333;
     margin: 5px;
+    font: 400 14px/32px "Microsoft YaHei";
 }
 .footer .bottom .first a:hover {
     color: #c40000;
 }
 .footer .bottom .second {
-    width: 289px;
+    width: 286px;
     height: 32px;
-    font: 400 14px/32px "Microsoft YaHei";
     margin: 0 auto;
     margin-bottom: 10px;
 }
 .footer .bottom .second span {
     color: #333333;
     margin: 5px;
+    font: 400 14px/32px "Microsoft YaHei";
 }
 .footer .bottom .second a {
     color: #333333;
+    font: 400 14px/32px "Microsoft YaHei";
 }
 .footer .bottom .second a:hover {
     color: #c40000;
 }
 .footer .bottom .last {
-    width: 593px;
+    width: 513px;
     height: 32px;
-    font: 400 14px/32px "Microsoft YaHei";
     margin: 0 auto;
     margin-bottom: 10px;
     color: #000;
 }
 .footer .bottom .last span {
     margin-right: 15px;
+    font: 400 12px/32px "Microsoft YaHei";
 }
 
 

@@ -235,22 +235,27 @@ ul,li{ list-style:none;}
     -webkit-box-shadow: 0 0 10px 1px #7d8eff;
     -moz-box-shadow: 0 0 10px 1px #7d8eff;
     box-shadow: 0 0 10px 1px #7d8eff;
+        margin-top: -5px;
 }
 .choose-for ul li:nth-child(2) a:hover {
     -webkit-box-shadow: 0 0 10px 1px #6c9ef3;
     -moz-box-shadow: 0 0 10px 1px #6c9ef3;
     box-shadow: 0 0 10px 1px #6c9ef3;
+        margin-top: -5px;
 }
 .choose-for ul li:nth-child(3) a:hover {
     -webkit-box-shadow: 0 0 10px 1px #6c9ef3;
     -moz-box-shadow: 0 0 10px 1px #6c9ef3;
     box-shadow: 0 0 10px 1px #6c9ef3;
+        margin-top: -5px;
 }
 
 .choose-for ul li:last-child a:hover {
     -webkit-box-shadow: 0 0 10px 1px #62bdea;
     -moz-box-shadow: 0 0 10px 1px #62bdea;
     box-shadow: 0 0 10px 1px #62bdea;
+    margin-top: -5px;
+
 }
 .choose-for ul li a img {
     width: 260px;
