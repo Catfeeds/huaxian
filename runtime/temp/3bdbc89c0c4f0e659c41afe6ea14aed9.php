@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:64:"E:\WWW\huaxian\public/../application/index\view\message\add.html";i:1527149619;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527130003;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527071150;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:64:"E:\WWW\huaxian\public/../application/index\view\message\add.html";i:1527231095;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527130003;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527071150;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -276,11 +276,23 @@
     <div class="center" style="position: relative;">
       <p class="top_title">您现在的位置 | <a href="<?php echo url('Message/index'); ?>">进言献策</a> > | <span> 留言 </span></p>
       <p class="detail_title">填写留言信息</p>
+      <style type="text/css">
+          #fab {
+            width: 150px;
+            height: 40px;
+            background: url(__PUBLIC__/images/leaveWord2.png) no-repeat 10px center #6391f1;
+            position: absolute;
+            right: 90px;
+            padding-left: 20px;
+            top: 56px;
+            text-align: center;
+            font: 700 18px/40px "Microsoft YaHei";
+            color: #fff;
+            cursor: pointer;
+          }
+        </style>
       <form action="<?php echo url('Message/add'); ?>" method="post" enctype="multipart/form-data"> 
-        <div class="enter_biu" style="position: absolute;right: 10px;top: 30px;">
-          <img src="__PUBLIC__/images/leaveWord2.png" alt="请重新加载">
-          <button class="enter_btn">发布</button>
-        </div>
+        <button id="fab">发布</button>
         <textarea class="content_detail" name="title" id="" cols="138" rows="18"></textarea>
       </form>
         <p class="reply_title">我的留言</p>
