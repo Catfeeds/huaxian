@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"E:\WWW\huaxian\public/../application/index\view\call\contactUs.html";i:1526889795;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527130003;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527071150;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"E:\WWW\huaxian\public/../application/index\view\call\contactUs.html";i:1527229924;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527130003;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527071150;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -287,7 +287,7 @@
                 <ul>
                     <li><img src="__PUBLIC__/images/us_1.png" alt="电话">联系电话: <?php echo $list['call']; ?></li>    
                     <li><img src="__PUBLIC__/images/us_3.png" alt="邮箱">邮箱：<?php echo $list['email']; ?></li> 
-                    <li><img src="__PUBLIC__/images/us_2.png" alt="地址">地址: <?php echo $list['address']; ?></li> 
+                    <li class="dizhi" title=<?php echo $list['address']; ?>><img src="__PUBLIC__/images/us_2.png" alt="地址">地址: <?php echo $list['address']; ?></li> 
                 </ul>
             </div>
             <!--  联系我们 地图 -->
