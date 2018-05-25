@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:64:"E:\WWW\huaxian\public/../application/index\view\index\index.html";i:1527123433;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527130003;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527071150;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:64:"E:\WWW\huaxian\public/../application/index\view\index\index.html";i:1527216613;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527130003;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527071150;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -400,8 +400,7 @@
                                 <?php if(is_array($news) || $news instanceof \think\Collection || $news instanceof \think\Paginator): $i = 0; $__LIST__ = $news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v2): $mod = ($i % 2 );++$i;?>
                                     <li><a href="<?php echo url('Index/newsdetail',array('id'=>$v2['id'])); ?>"><?php echo $v2['title']; ?></a><span>[<?php echo $v2['newstime']; ?>]</span></li>
                                 <?php endforeach; endif; else: echo "" ;endif; ?>
-                                <li><a href="##">李克强李克强李克强李克强李克强近平总书记</a><span>[2018-05-01]</span></li>
-                                <li><a href="##">李克强李克强李克强李克强李克强近平总书记</a><span>[2018-05-01]</span></li>
+                                <!-- <li><a href="##">李克强李克强李克强李克强李克强近平总书记</a><span>[2018-05-01]</span></li> -->
                                 <li style="margin-top: 10px;"><a href="<?php echo url('Index/news'); ?>" style="float: right;margin-right: 20px;background: none;color: #666;">更多>></a></li>
                             </ul>
                             <i></i>
@@ -411,8 +410,7 @@
                                 <?php if(is_array($notice) || $notice instanceof \think\Collection || $notice instanceof \think\Paginator): $i = 0; $__LIST__ = $notice;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v3): $mod = ($i % 2 );++$i;?>
                                     <li><a href="<?php echo url('Index/noticedetail',array('id'=>$v3['id'])); ?>"><?php echo $v3['title']; ?></a><span>[<?php echo date('Y-m-d',strtotime($v3['time'])); ?>]</span></li>
                                 <?php endforeach; endif; else: echo "" ;endif; ?>
-                                <li><a href="##">习近平总书记习近平总书记近平总书记</a><span>[2018-05-10]</span></li>
-                                <li><a href="##">习近平总书记习近平总书记近平总书记</a><span>[2018-05-10]</span></li>
+                                <!-- <li><a href="##">习近平总书记习近平总书记近平总书记</a><span>[2018-05-10]</span></li> -->
                             </ul>
                             <i></i>
                         </li>

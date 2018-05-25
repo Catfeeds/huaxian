@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"E:\WWW\huaxian\public/../application/index\view\work\index.html";i:1527130103;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527130003;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527071150;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"E:\WWW\huaxian\public/../application/index\view\work\index.html";i:1527217386;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527130003;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527071150;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -315,9 +315,13 @@
                     </style>-->
                     <ul>
                         <?php if(is_array($file) || $file instanceof \think\Collection || $file instanceof \think\Paginator): $i = 0; $__LIST__ = $file;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                            <li><a href="<?php echo url('Work/download',array('id'=>$vo['id'])); ?>" title="<?php echo $vo['file']; ?>"><span>【<?php echo $vo['address']; ?>】</span><span class="overhide"><?php echo $vo['file']; ?></span><span>[<?php echo $vo['time']; ?>]</span></a></li>
+                            <li>
+                                <a href="<?php echo url('Work/download',array('id'=>$vo['id'])); ?>" title="<?php echo $vo['file']; ?>">
+                                    <span>【<?php echo $vo['address']; ?>】</span><span class="overhide"><?php echo $vo['file']; ?></span><span>[<?php echo $vo['time']; ?>]</span>
+                                </a>
+                            </li>
                         <?php endforeach; endif; else: echo "" ;endif; ?>
-                        <li><a href="#"><span>【金光路办事处】</span><span class="overhide">金光路党工委书记王文斌对柳湖办事处开展仓储物流消防安全检查工作园口村搅拌站环...</span><span>[2018-04-28 15:40]</span></a></li>
+                        <!-- <li><a href="#"><span>【金光路办事处】</span><span class="overhide">金光路党工委书记王文斌对柳湖办事处开展仓储物流消防安全检查工作园口村搅拌站环...</span><span>[2018-04-28 15:40]</span></a></li> -->
                     </ul>
                 </div>
             </div> 

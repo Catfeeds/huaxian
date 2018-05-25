@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"E:\WWW\huaxian\public/../application/admin\view\file\lst_file.html";i:1527047372;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"E:\WWW\huaxian\public/../application/admin\view\file\lst_file.html";i:1527212866;}*/ ?>
 ﻿   <!DOCTYPE HTML>
 <html>
 <head>
@@ -34,8 +34,13 @@
 </nav>
 
 <div class="pd-20">
-	<div class="text-c"> 
+	<div class="text-c">
+	<form action="<?php echo url('File/lst_file'); ?>" method="get">		
+		<input type="text" class="input-text" style="width:250px" placeholder="请输入文件标题" id="" name="keywords" value="">
+		<button type="submit" class="btn btn-success">
+		<i class="Hui-iconfont">&#xe665;</i> 查询</button> 
 	</div>
+	</form>
 	<div class="cl pd-5 bg-1 bk-gray mt-20"> 
     <span class="l">
           <a href="<?php echo url('File/add_file'); ?>" class="btn btn-danger radius" >
