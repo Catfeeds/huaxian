@@ -11154,6 +11154,11 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `tr_imgs` [ RunTime:0.005850s ]
 [ sql ] [ SQL ] SELECT * FROM `tr_imgs` ORDER BY id desc [ RunTime:0.000507s ]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 14bf434e0a074b208d824529106da1e98a590fb0
+=======
+>>>>>>> a0d0d917fd42685fec5b0085a07aae78806a8ede
 ---------------------------------------------------------------
 [ 2018-05-25T15:00:16+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/index/index/index.html
 [ info ] 192.168.18.228/huaxian/public/index/index/index.html [运行时间：0.082361s][吞吐率：12.14req/s] [内存消耗：2,585.65kb] [文件加载：55]
@@ -14367,6 +14372,7 @@
 [ sql ] [ SQL ] SELECT * FROM `tr_file` ORDER BY id desc LIMIT 7 [ RunTime:0.000501s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `tr_events` [ RunTime:0.005563s ]
 [ sql ] [ SQL ] SELECT * FROM `tr_events` ORDER BY id desc LIMIT 7 [ RunTime:0.000536s ]
+<<<<<<< HEAD
 ---------------------------------------------------------------
 [ 2018-05-25T15:10:56+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/index/call/call
 [ info ] 192.168.18.228/huaxian/public/index/call/call [运行时间：0.059067s][吞吐率：16.93req/s] [内存消耗：2,642.09kb] [文件加载：57]
@@ -26656,3 +26662,6 @@
 >>>>>>> 14bf434e0a074b208d824529106da1e98a590fb0
 >>>>>>> aa67d85da8e30cb8f8d4f89958b2a05f8f6e10c9
 >>>>>>> develop
+=======
+>>>>>>> e45b099347322f041106ed2e5336a06b317a6493
+>>>>>>> a0d0d917fd42685fec5b0085a07aae78806a8ede
