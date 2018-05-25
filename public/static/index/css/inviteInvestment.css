@@ -1,0 +1,89 @@
+.center {
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.top_title {
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 14px;
+}
+.top_title a {
+  color: #666;
+}
+.top_title span {
+  color: #6391f1;
+}
+.content {
+  width: 1010px;
+  margin-top: 15px;
+  margin-left: 3%;
+  padding: 20px 25px 50px 25px;
+  font-size: 16px;
+  background-color: #f0f3f6;
+  word-wrap: word-break;
+}
+.poor_detail {
+  width: 1010px;
+  margin-left: 3%;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  border: 1px solid #eee;
+  box-sizing: border-box;
+}
+.poor_detail .poor_title {
+  height: 50px;
+  line-height: 50px;
+  text-indent: 66px;
+  font-size: 22px;
+  color: #0c6ad4;
+  font-weight: bolder;
+  border-bottom: 1px solid #eee;
+  background-image: url('../images/inviteInvestment1.png');
+  background-repeat: no-repeat;
+  background-position: 27px 10px;
+}
+.poor_detail ul {
+  width: 100%;
+  margin-top: 15px;
+}
+.poor_detail li {
+  width: 50%;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-indent: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.poor_detail li a {
+  display: inline-block;
+  width: 370px;
+  color: #3c3c3c;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.poor_detail li:hover a {
+  color: #0c6ad4;
+}
+.poor_detail li:hover span {
+  color: #0c6ad4;
+}
+.poor_detail li span {
+  float: right;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.poor_detail li:nth-child(odd) {
+  border-right: 1px solid #eee;
+}

@@ -1,0 +1,122 @@
+.center {
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.top_title {
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 14px;
+}
+.top_title a {
+  color: #666;
+}
+.top_title span {
+  color: #6391f1;
+}
+.detail_title {
+  height: 30px;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-left: 66px;
+  display: inline-block;
+  color: #4b4b4b;
+  font-size: 20px;
+  text-indent: 34px;
+  background-image: url('../images/leaveWord1.png');
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+.enter_biu {
+  width: 150px;
+  height: 40px;
+  float: right;
+  margin-top: 30px;
+  margin-right: 110px;
+  background-color: #6391f1;
+}
+.enter_biu img {
+  margin-left: 28px;
+  margin-top: 4px;
+}
+.enter_btn{
+  font-size: 20px;
+  color: #fff;
+  float: right;
+  line-height: 40px;
+  margin-right: 36px;
+  background-color: #6391f1;
+}
+.content_detail {
+  display: block;
+  margin-left: 66px;
+  margin-top: 20px;
+  font-size: 14px;
+  text-indent: 28px;
+  /*width: 88%;*/
+}
+.reply_title {
+  width: 88%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 40px;
+  margin-left: 66px;
+  color: #4b4b4b;
+  font-size: 20px;
+  text-indent: 34px;
+  background-image: url('../images/leaveWord3.png');
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: 0 4px;
+  border-bottom: 3px solid #ddd;
+}
+.reply_detail {
+  width: 85%;
+  margin-top: 25px;
+  margin-left: 100px;
+  border-bottom: 1px solid #ddd;
+}
+.reply_detail img {
+  width: 30px;
+  height: auto;
+  float: left;
+  position: relative;
+  left: -12px;
+}
+.reply_detail .question {
+  font-size: 16px;
+  line-height: 35px;
+  margin-left: 10px;
+}
+.reply_detail .question span {
+  float: right;
+}
+.reply_detail .question .question_date {
+  margin-right: 20px;
+}
+.reply_detail .answer {
+  color: #324d8a;
+  font-size: 16px;
+  line-height: 35px;
+  margin-left: 69px;
+  position: relative;
+}
+.reply_detail .answer reply {
+  color: #3221fb;
+  font-size: 20px;
+  text-indent: 5px;
+  position: absolute;
+  left: -65px;
+}
+.reply_detail .answer span {
+  float: right;
+}
+.reply_detail .answer .answer_date {
+  margin-right: 20px;
+}

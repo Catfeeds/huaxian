@@ -1,0 +1,77 @@
+.center {
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.top_title {
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 14px;
+}
+.top_title a {
+  color: #666;
+}
+.top_title span {
+  color: #6391f1;
+}
+h1 {
+  width: 88%;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 15px;
+  margin-left: 66px;
+  font-size: 22px;
+  font-weight: bolder;
+  text-indent: 10px;
+  border-left: 5px solid #1884e1;
+  background-color: #eee;
+}
+h2 {
+  width: 86%;
+  margin-top: 10px;
+  margin-left: 100px;
+  font-size: 18px;
+  line-height: 30px;
+}
+p {
+  width: 81%;
+  margin-left: 154px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.person_detail {
+  width: 83%;
+  min-height: 200px;
+  margin-top: 15px;
+  margin-left: 71px;
+  border-bottom: 1px solid #eee;
+}
+.person_detail img {
+  float: left;
+  width: 140px;
+  height: 173px;
+  margin-left: 40px;
+}
+.person_detail h3 {
+  margin-top: 15px;
+  margin-left: 200px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.person_detail .person_title {
+  padding-top: 35px;
+}
+.person_detail h4 {
+  margin-top: 15px;
+  margin-left: 200px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: bolder;
+}
