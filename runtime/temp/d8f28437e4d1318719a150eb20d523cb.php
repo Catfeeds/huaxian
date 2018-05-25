@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"E:\WWW\huaxian\public/../application/admin\view\file\my_file.html";i:1527213271;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"E:\WWW\huaxian\public/../application/admin\view\file\my_file.html";i:1527218517;}*/ ?>
 ﻿   <!DOCTYPE HTML>
 <html>
 <head>
