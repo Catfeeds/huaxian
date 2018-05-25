@@ -23370,3 +23370,1021 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.011579s ] mysql:dbname=huaxian;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `tr_link` [ RunTime:0.025525s ]
 [ sql ] [ SQL ] SELECT * FROM `tr_link` ORDER BY id desc LIMIT 5 [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[ 2018-05-25T15:01:41+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/index/index/index.html
+[ info ] 192.168.18.228/huaxian/public/index/index/index.html [运行时间：0.099202s][吞吐率：10.08req/s] [内存消耗：2,778.53kb] [文件加载：57]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/city/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\huaxian\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\WWW\huaxian\public/../application/index\view\index\index.html [ array (
+  0 => 'username',
+  1 => 'id',
+  2 => 'link',
+  3 => 'news',
+  4 => 'notice',
+  5 => 'company',
+  6 => 'company1',
+  7 => 'company2',
+  8 => 'imgs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005707s ] mysql:dbname=huaxian;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_link` [ RunTime:0.006027s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_link` ORDER BY id desc LIMIT 5 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_news` [ RunTime:0.022158s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_news` ORDER BY id desc [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_notice` [ RunTime:0.005446s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_notice` ORDER BY id desc [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_company` [ RunTime:0.006920s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id asc [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id asc LIMIT 4 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id desc LIMIT 4 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_imgs` [ RunTime:0.005115s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_imgs` ORDER BY id desc [ RunTime:0.000411s ]
+---------------------------------------------------------------
+[ 2018-05-25T15:01:41+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png
+[ info ] 192.168.18.228/huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png [运行时间：0.022610s][吞吐率：44.23req/s] [内存消耗：1,411.38kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'upimages',
+    2 => '20180525',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:01:41+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png
+[ info ] 192.168.18.228/huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png [运行时间：0.023738s][吞吐率：42.13req/s] [内存消耗：1,411.38kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'upimages',
+    2 => '20180525',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:01:47+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/index/index/index.html
+[ info ] 192.168.18.228/huaxian/public/index/index/index.html [运行时间：0.078481s][吞吐率：12.74req/s] [内存消耗：2,585.65kb] [文件加载：55]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/city/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\huaxian\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\WWW\huaxian\public/../application/index\view\index\index.html [ array (
+  0 => 'username',
+  1 => 'id',
+  2 => 'link',
+  3 => 'news',
+  4 => 'notice',
+  5 => 'company',
+  6 => 'company1',
+  7 => 'company2',
+  8 => 'imgs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002843s ] mysql:dbname=huaxian;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_link` [ RunTime:0.006014s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_link` ORDER BY id desc LIMIT 5 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_news` [ RunTime:0.005878s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_news` ORDER BY id desc [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_notice` [ RunTime:0.005705s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_notice` ORDER BY id desc [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_company` [ RunTime:0.005423s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id asc [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id asc LIMIT 4 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id desc LIMIT 4 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_imgs` [ RunTime:0.005212s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_imgs` ORDER BY id desc [ RunTime:0.000445s ]
+---------------------------------------------------------------
+[ 2018-05-25T15:01:47+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png
+[ info ] 192.168.18.228/huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png [运行时间：0.022533s][吞吐率：44.38req/s] [内存消耗：1,411.38kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'upimages',
+    2 => '20180525',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:01:47+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png
+[ info ] 192.168.18.228/huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png [运行时间：0.021791s][吞吐率：45.89req/s] [内存消耗：1,411.37kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'upimages',
+    2 => '20180525',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:01:53+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/index/gov/index.html
+[ info ] 192.168.18.228/huaxian/public/index/gov/index.html [运行时间：0.072116s][吞吐率：13.87req/s] [内存消耗：2,543.58kb] [文件加载：55]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'gov',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Gov->index[ E:\WWW\huaxian\application\index\controller\Gov.php ]
+[ info ] [ VIEW ] E:\WWW\huaxian\public/../application/index\view\gov\index.html [ array (
+  0 => 'username',
+  1 => 'id',
+  2 => 'link',
+  3 => 'detail',
+  4 => 'leader',
+  5 => 'file',
+  6 => 'events',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001057s ] mysql:dbname=huaxian;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_link` [ RunTime:0.006184s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_link` ORDER BY id desc LIMIT 5 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_detail` [ RunTime:0.005327s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_detail` ORDER BY id desc LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_leader` [ RunTime:0.005474s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_leader` WHERE  `statue` = '是' ORDER BY id desc LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_file` [ RunTime:0.005553s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_file` ORDER BY id desc LIMIT 7 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_events` [ RunTime:0.005359s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_events` ORDER BY id desc LIMIT 7 [ RunTime:0.000436s ]
+---------------------------------------------------------------
+[ 2018-05-25T15:01:53+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/images/governmentStyle_next.png
+[ info ] 192.168.18.228/huaxian/public/static/images/governmentStyle_next.png [运行时间：0.022685s][吞吐率：44.08req/s] [内存消耗：1,411.48kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'governmentStyle_next.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/static/index/css/governmentStyle.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:01:53+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/images/governmentStyle_pre.png
+[ info ] 192.168.18.228/huaxian/public/static/images/governmentStyle_pre.png [运行时间：0.021759s][吞吐率：45.96req/s] [内存消耗：1,411.45kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'governmentStyle_pre.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/static/index/css/governmentStyle.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:01:53+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/images/governmentStyle3.png
+[ info ] 192.168.18.228/huaxian/public/static/images/governmentStyle3.png [运行时间：0.025320s][吞吐率：39.49req/s] [内存消耗：1,411.39kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'governmentStyle3.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/static/index/css/governmentStyle.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:01:53+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/index/js/swiper.min.js.map
+[ info ] 192.168.18.228/huaxian/public/static/index/js/swiper.min.js.map [运行时间：0.022579s][吞吐率：44.29req/s] [内存消耗：1,410.41kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:01:54+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/index/index/index.html
+[ info ] 192.168.18.228/huaxian/public/index/index/index.html [运行时间：0.077041s][吞吐率：12.98req/s] [内存消耗：2,585.65kb] [文件加载：55]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/gov/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\huaxian\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\WWW\huaxian\public/../application/index\view\index\index.html [ array (
+  0 => 'username',
+  1 => 'id',
+  2 => 'link',
+  3 => 'news',
+  4 => 'notice',
+  5 => 'company',
+  6 => 'company1',
+  7 => 'company2',
+  8 => 'imgs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002901s ] mysql:dbname=huaxian;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_link` [ RunTime:0.005858s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_link` ORDER BY id desc LIMIT 5 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_news` [ RunTime:0.006890s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_news` ORDER BY id desc [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_notice` [ RunTime:0.005538s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_notice` ORDER BY id desc [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_company` [ RunTime:0.005307s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id asc [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id asc LIMIT 4 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id desc LIMIT 4 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_imgs` [ RunTime:0.005633s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_imgs` ORDER BY id desc [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[ 2018-05-25T15:01:54+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png
+[ info ] 192.168.18.228/huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png [运行时间：0.022034s][吞吐率：45.38req/s] [内存消耗：1,411.38kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'upimages',
+    2 => '20180525',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:01:54+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png
+[ info ] 192.168.18.228/huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png [运行时间：0.021533s][吞吐率：46.44req/s] [内存消耗：1,411.38kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'upimages',
+    2 => '20180525',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:01:55+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/index/city/index.html
+[ info ] 192.168.18.228/huaxian/public/index/city/index.html [运行时间：0.062439s][吞吐率：16.02req/s] [内存消耗：2,677.22kb] [文件加载：57]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'city',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\City->index[ E:\WWW\huaxian\application\index\controller\City.php ]
+[ info ] [ VIEW ] E:\WWW\huaxian\public/../application/index\view\city\index.html [ array (
+  0 => 'username',
+  1 => 'id',
+  2 => 'link',
+  3 => 'jinhe',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001724s ] mysql:dbname=huaxian;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_link` [ RunTime:0.005549s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_link` ORDER BY id desc LIMIT 5 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_jinhe` [ RunTime:0.015416s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_jinhe` ORDER BY id desc [ RunTime:0.000551s ]
+---------------------------------------------------------------
+[ 2018-05-25T15:01:57+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/index/index/index.html
+[ info ] 192.168.18.228/huaxian/public/index/index/index.html [运行时间：0.169957s][吞吐率：5.88req/s] [内存消耗：2,585.65kb] [文件加载：55]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/city/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\huaxian\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\WWW\huaxian\public/../application/index\view\index\index.html [ array (
+  0 => 'username',
+  1 => 'id',
+  2 => 'link',
+  3 => 'news',
+  4 => 'notice',
+  5 => 'company',
+  6 => 'company1',
+  7 => 'company2',
+  8 => 'imgs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001073s ] mysql:dbname=huaxian;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_link` [ RunTime:0.105886s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_link` ORDER BY id desc LIMIT 5 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_news` [ RunTime:0.005586s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_news` ORDER BY id desc [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_notice` [ RunTime:0.005115s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_notice` ORDER BY id desc [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_company` [ RunTime:0.005364s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id asc [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id asc LIMIT 4 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id desc LIMIT 4 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_imgs` [ RunTime:0.005202s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_imgs` ORDER BY id desc [ RunTime:0.000532s ]
+---------------------------------------------------------------
+[ 2018-05-25T15:01:57+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png
+[ info ] 192.168.18.228/huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png [运行时间：0.021855s][吞吐率：45.76req/s] [内存消耗：1,411.38kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'upimages',
+    2 => '20180525',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:01:57+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png
+[ info ] 192.168.18.228/huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png [运行时间：0.025797s][吞吐率：38.76req/s] [内存消耗：1,411.37kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'upimages',
+    2 => '20180525',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:02:08+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/index/index/index.html
+[ info ] 192.168.18.228/huaxian/public/index/index/index.html [运行时间：0.069831s][吞吐率：14.32req/s] [内存消耗：2,585.65kb] [文件加载：55]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/city/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\huaxian\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\WWW\huaxian\public/../application/index\view\index\index.html [ array (
+  0 => 'username',
+  1 => 'id',
+  2 => 'link',
+  3 => 'news',
+  4 => 'notice',
+  5 => 'company',
+  6 => 'company1',
+  7 => 'company2',
+  8 => 'imgs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001060s ] mysql:dbname=huaxian;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_link` [ RunTime:0.006113s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_link` ORDER BY id desc LIMIT 5 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_news` [ RunTime:0.005855s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_news` ORDER BY id desc [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_notice` [ RunTime:0.005647s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_notice` ORDER BY id desc [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_company` [ RunTime:0.005298s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id asc [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id asc LIMIT 4 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id desc LIMIT 4 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_imgs` [ RunTime:0.005510s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_imgs` ORDER BY id desc [ RunTime:0.000462s ]
+---------------------------------------------------------------
+[ 2018-05-25T15:02:08+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png
+[ info ] 192.168.18.228/huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png [运行时间：0.027942s][吞吐率：35.79req/s] [内存消耗：1,411.38kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'upimages',
+    2 => '20180525',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:02:08+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png
+[ info ] 192.168.18.228/huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png [运行时间：0.032135s][吞吐率：31.12req/s] [内存消耗：1,411.38kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'upimages',
+    2 => '20180525',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:02:13+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/index/index/index.html
+[ info ] 192.168.18.228/huaxian/public/index/index/index.html [运行时间：0.072175s][吞吐率：13.86req/s] [内存消耗：2,585.65kb] [文件加载：55]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\huaxian\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\WWW\huaxian\public/../application/index\view\index\index.html [ array (
+  0 => 'username',
+  1 => 'id',
+  2 => 'link',
+  3 => 'news',
+  4 => 'notice',
+  5 => 'company',
+  6 => 'company1',
+  7 => 'company2',
+  8 => 'imgs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004320s ] mysql:dbname=huaxian;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_link` [ RunTime:0.006028s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_link` ORDER BY id desc LIMIT 5 [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_news` [ RunTime:0.005948s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_news` ORDER BY id desc [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_notice` [ RunTime:0.005472s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_notice` ORDER BY id desc [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_company` [ RunTime:0.005340s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id asc [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id asc LIMIT 4 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_company` ORDER BY id desc LIMIT 4 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_imgs` [ RunTime:0.005183s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_imgs` ORDER BY id desc [ RunTime:0.000460s ]
+---------------------------------------------------------------
+[ 2018-05-25T15:02:13+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png
+[ info ] 192.168.18.228/huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png [运行时间：0.021654s][吞吐率：46.18req/s] [内存消耗：1,411.38kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'upimages',
+    2 => '20180525',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:02:13+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png
+[ info ] 192.168.18.228/huaxian/public/static/upimages/20180525/e2101464e607dadcc5bfd73caefde51f.png [运行时间：0.021978s][吞吐率：45.50req/s] [内存消耗：1,411.38kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'upimages',
+    2 => '20180525',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:02:19+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/index.php/admin/login/login.html
+[ info ] 192.168.18.228/huaxian/public/index.php/admin/login/login.html [运行时间：0.027996s][吞吐率：35.72req/s] [内存消耗：1,731.88kb] [文件加载：47]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\Admin\controller\Login->login[ E:\WWW\huaxian\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] E:\WWW\huaxian\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:02:19+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/static/admin/images/logopng
+[ info ] 192.168.18.228/huaxian/public/static/admin/images/logopng [运行时间：0.023085s][吞吐率：43.32req/s] [内存消耗：1,410.84kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/static/admin/css/H-ui.login.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-05-25T15:02:19+08:00 ] 192.168.18.228 192.168.18.166 GET /huaxian/public/index.php/captcha.html
+[ info ] 192.168.18.228/huaxian/public/index.php/captcha.html [运行时间：0.035707s][吞吐率：28.01req/s] [内存消耗：1,437.16kb] [文件加载：39]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index.php/admin/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=huhpr1dpvb98gpc68somgmkm63; Hm_lvt_080836300300be57b7f34f4b3e97d911=1526114465; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527230428',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\WWW\huaxian\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
