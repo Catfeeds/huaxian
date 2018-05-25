@@ -23278,3 +23278,95 @@
 [ sql ] [ SQL ] SELECT * FROM `tr_link` ORDER BY id desc LIMIT 5 [ RunTime:0.000539s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `tr_jinhe` [ RunTime:0.007522s ]
 [ sql ] [ SQL ] SELECT * FROM `tr_jinhe` ORDER BY id desc [ RunTime:0.000464s ]
+---------------------------------------------------------------
+[ 2018-05-25T11:18:40+08:00 ] 192.168.18.228 192.168.18.228 GET /huaxian/public/index/call/call.html
+[ info ] 192.168.18.228/huaxian/public/index/call/call.html [运行时间：0.065560s][吞吐率：15.25req/s] [内存消耗：2,536.34kb] [文件加载：55]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'call',
+    2 => 'call',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/message/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'PHPSESSID=d9tsqtlahai9cv03horoarg3s1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1527065871,1527121047,1527142601,1527207387; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527216332',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Call->call[ E:\WWW\huaxian\application\index\controller\Call.php ]
+[ info ] [ VIEW ] E:\WWW\huaxian\public/../application/index\view\call\contactUs.html [ array (
+  0 => 'username',
+  1 => 'id',
+  2 => 'link',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011421s ] mysql:dbname=huaxian;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_link` [ RunTime:0.005918s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_link` ORDER BY id desc LIMIT 5 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_call` [ RunTime:0.005383s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_call` LIMIT 1 [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[ 2018-05-25T11:18:40+08:00 ] 192.168.18.228 192.168.18.228 GET /huaxian/public/index/call/map.html
+[ info ] 192.168.18.228/huaxian/public/index/call/map.html [运行时间：0.075526s][吞吐率：13.24req/s] [内存消耗：2,452.83kb] [文件加载：54]
+[ info ] [ LANG ] E:\WWW\huaxian\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'call',
+    2 => 'map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/huaxian/public/index/call/call.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'PHPSESSID=d9tsqtlahai9cv03horoarg3s1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1527065871,1527121047,1527142601,1527207387; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1527216332',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Call->map[ E:\WWW\huaxian\application\index\controller\Call.php ]
+[ info ] [ VIEW ] E:\WWW\huaxian\public/../application/index\view\call\usMap.html [ array (
+  0 => 'username',
+  1 => 'id',
+  2 => 'link',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011579s ] mysql:dbname=huaxian;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_link` [ RunTime:0.025525s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_link` ORDER BY id desc LIMIT 5 [ RunTime:0.000504s ]
