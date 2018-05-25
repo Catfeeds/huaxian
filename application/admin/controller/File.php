@@ -12,8 +12,15 @@ class File extends Base{
 		$privilege=db('role')->field('pri_id')->find($role);
 		$privilege1=explode(',',$privilege['pri_id']);
 
-		$list=db('neibufile')->order('id desc')->paginate(10);  //分页查询数据
-		$counts=db('neibufile')->count();  //记录总数
+		$keywords = input('keywords');
+        if($keywords){
+            $where['file']=['like','%'.$keywords.'%'];
+        }else{
+            $where=1; 
+        }
+
+		$list=db('neibufile')->where($where)->order('id desc')->paginate(10);  //分页查询数据
+		$counts=db('neibufile')->where($where)->count();  //记录总数
 		$page=$list->render();   
 		$this->assign(array(
 			'counts'=>$counts,
@@ -26,9 +33,15 @@ class File extends Base{
 	}
 	//我的文件列表
 	public function my_file(){
+		$keywords = input('keywords');
+        if($keywords){
+            $where['file']=['like','%'.$keywords.'%'];
+        }else{
+            $where=1; 
+        }
 		$user = session('adminid');
-		$list=db('neibufile')->order('id desc')->where('user','=',$user)->paginate(10);  //分页查询数据
-		$counts=db('neibufile')->where('user','=',$user)->count();  //记录总数
+		$list=db('neibufile')->where($where)->order('id desc')->where('user','=',$user)->paginate(10);  //分页查询数据
+		$counts=db('neibufile')->where($where)->where('user','=',$user)->count();  //记录总数
 		$page=$list->render();   
 		$this->assign(array(
 			'counts'=>$counts,

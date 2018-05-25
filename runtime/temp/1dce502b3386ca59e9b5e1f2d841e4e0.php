@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"E:\WWW\huaxian\public/../application/index\view\index\events.html";i:1527067843;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527130003;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527071150;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"E:\WWW\huaxian\public/../application/index\view\index\events.html";i:1527216710;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527130003;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527071150;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -334,10 +334,7 @@
                                 <img src="__IMG__<?php echo $vo['image']; ?>"/>
                             </div>
                         <?php endforeach; endif; else: echo "" ;endif; ?>
-
-                        <div class="swiper-slide" style="background-image:url(__PUBLIC__/images/big_1.png)"><p>2018年年水电费健康时间放得开时空大家疯狂的健身房年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年----------滑县成立</p></div>
-                        <div class="swiper-slide" style="background-image:url(__PUBLIC__/images/big_2.png)"><p>2019年年水电费健康时间放得开时空大家疯狂的健身房年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年----------滑县成立</p></div>
-                        <div class="swiper-slide" style="background-image:url(__PUBLIC__/images/big_3.png)"><p>2010年年水电费健康时间放得开时空大家疯狂的健身房年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年----------滑县成立</p></div>
+                        <!-- <div class="swiper-slide" style="background-image:url(__PUBLIC__/images/big_3.png)"><p>2010年年水电费健康时间放得开时空大家疯狂的健身房年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年年滑县成立</p></div> -->
                     </div>
 
                     <!-- Add Pagination -->
