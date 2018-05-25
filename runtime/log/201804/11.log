@@ -1,0 +1,1331 @@
+---------------------------------------------------------------
+[ 2018-04-11T10:01:16+08:00 ] ::1 ::1 GET /transport/public/index/index/index.html
+[ info ] localhost/transport/public/index/index/index.html [运行时间：0.895794s][吞吐率：1.12req/s] [内存消耗：3,618.54kb] [文件加载：63]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\transport\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\WWW\transport\public/../application/index\view\index\index.html [ array (
+  0 => 'banner',
+  1 => 'username',
+  2 => 'user_u',
+  3 => 'image',
+  4 => 'pathres',
+  5 => 'goodsres1',
+  6 => 'goods_sort',
+  7 => 'news',
+  8 => 'customerres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001637s ] mysql:dbname=transport;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_banner` [ RunTime:0.017891s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_banner` LIMIT 1 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_user` [ RunTime:0.005879s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_user` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_image` [ RunTime:0.006378s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_image` ORDER BY id desc [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_path` [ RunTime:0.006353s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_path` WHERE  `check_state` = 2  AND `is_recycle` = 0  AND `is_company` = 1 ORDER BY id desc [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_goods` [ RunTime:0.006418s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_goods` WHERE  `order_state` = 1  AND `check_state` = 2  AND `is_recycle` = 0  AND `uptype` = '0'  AND `add_goods` = 0 ORDER BY is_company desc,id desc [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_goodskindtype` [ RunTime:0.005377s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_goodskindtype` [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_article` [ RunTime:0.006901s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tr_article` WHERE  `statue` = '是' LIMIT 1 [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_article` WHERE  `statue` = '是' ORDER BY articletime desc LIMIT 0,7 [ RunTime:0.001480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_customer` [ RunTime:0.005634s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_customer` ORDER BY id desc [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_banner` LIMIT 1 [ RunTime:0.000533s ]
+---------------------------------------------------------------
+[ 2018-04-11T10:01:17+08:00 ] ::1 ::1 GET /transport/public/static/index/fonts/glyphicons-halflings-regular.woff2
+[ info ] localhost/transport/public/static/index/fonts/glyphicons-halflings-regular.woff2 [运行时间：0.149037s][吞吐率：6.71req/s] [内存消耗：1,412.10kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/transport/public/static/index/css/bootstrap.min.css',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:17+08:00 ] 192.168.18.228 192.168.18.228 GET /transport/public/static/index/images/icon_5.jpg
+[ info ] 192.168.18.228/transport/public/static/index/images/icon_5.jpg [运行时间：0.056608s][吞吐率：17.67req/s] [内存消耗：1,411.18kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/transport/public/static/index/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:17+08:00 ] 192.168.18.228 192.168.18.228 GET /transport/public/static/index/images/icon_4.jpg
+[ info ] 192.168.18.228/transport/public/static/index/images/icon_4.jpg [运行时间：0.072397s][吞吐率：13.81req/s] [内存消耗：1,411.18kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/transport/public/static/index/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:17+08:00 ] 192.168.18.228 192.168.18.228 GET /transport/public/static/index/images/loading.gif
+[ info ] 192.168.18.228/transport/public/static/index/images/loading.gif [运行时间：0.026210s][吞吐率：38.15req/s] [内存消耗：1,411.13kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/transport/public/static/index/css/higo.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:17+08:00 ] 192.168.18.228 192.168.18.228 GET /transport/public/static/index/images/icon_2.jpg
+[ info ] 192.168.18.228/transport/public/static/index/images/icon_2.jpg [运行时间：0.073219s][吞吐率：13.66req/s] [内存消耗：1,411.18kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/transport/public/static/index/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:17+08:00 ] 192.168.18.228 192.168.18.228 GET /transport/public/static/index/images/icon_3.jpg
+[ info ] 192.168.18.228/transport/public/static/index/images/icon_3.jpg [运行时间：0.075451s][吞吐率：13.25req/s] [内存消耗：1,411.18kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/transport/public/static/index/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:37+08:00 ] ::1 ::1 GET /transport/public/index.php/index/index/index.html
+[ info ] localhost/transport/public/index.php/index/index/index.html [运行时间：0.219341s][吞吐率：4.56req/s] [内存消耗：3,338.88kb] [文件加载：61]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\WWW\transport\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\WWW\transport\public/../application/index\view\index\index.html [ array (
+  0 => 'banner',
+  1 => 'username',
+  2 => 'user_u',
+  3 => 'image',
+  4 => 'pathres',
+  5 => 'goodsres1',
+  6 => 'goods_sort',
+  7 => 'news',
+  8 => 'customerres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010782s ] mysql:dbname=transport;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_banner` [ RunTime:0.047962s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_banner` LIMIT 1 [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_user` [ RunTime:0.047051s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_user` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_image` [ RunTime:0.006664s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_image` ORDER BY id desc [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_path` [ RunTime:0.006576s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_path` WHERE  `check_state` = 2  AND `is_recycle` = 0  AND `is_company` = 1 ORDER BY id desc [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_goods` [ RunTime:0.007150s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_goods` WHERE  `order_state` = 1  AND `check_state` = 2  AND `is_recycle` = 0  AND `uptype` = '0'  AND `add_goods` = 0 ORDER BY is_company desc,id desc [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_goodskindtype` [ RunTime:0.005231s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_goodskindtype` [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_article` [ RunTime:0.007267s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tr_article` WHERE  `statue` = '是' LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_article` WHERE  `statue` = '是' ORDER BY articletime desc LIMIT 0,7 [ RunTime:0.001086s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_customer` [ RunTime:0.007122s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_customer` ORDER BY id desc [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_banner` LIMIT 1 [ RunTime:0.000383s ]
+---------------------------------------------------------------
+[ 2018-04-11T10:01:37+08:00 ] ::1 ::1 GET /transport/public/index.php/static/index/css/bootstrap.min.css
+[ info ] localhost/transport/public/index.php/static/index/css/bootstrap.min.css [运行时间：0.031434s][吞吐率：31.81req/s] [内存消耗：1,411.73kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/transport/public/index.php/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:37+08:00 ] ::1 ::1 GET /transport/public/index.php/static/index/css/font-awesome.min.css
+[ info ] localhost/transport/public/index.php/static/index/css/font-awesome.min.css [运行时间：0.036034s][吞吐率：27.75req/s] [内存消耗：1,411.78kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/transport/public/index.php/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:37+08:00 ] 192.168.18.228 192.168.18.228 GET /transport/public/static/index/images/loading.gif
+[ info ] 192.168.18.228/transport/public/static/index/images/loading.gif [运行时间：0.022069s][吞吐率：45.31req/s] [内存消耗：1,411.13kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/transport/public/static/index/css/higo.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:37+08:00 ] 192.168.18.228 192.168.18.228 GET /transport/public/static/index/images/icon_3.jpg
+[ info ] 192.168.18.228/transport/public/static/index/images/icon_3.jpg [运行时间：0.027814s][吞吐率：35.95req/s] [内存消耗：1,411.20kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/transport/public/static/index/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:37+08:00 ] 192.168.18.228 192.168.18.228 GET /transport/public/static/index/images/icon_5.jpg
+[ info ] 192.168.18.228/transport/public/static/index/images/icon_5.jpg [运行时间：0.036703s][吞吐率：27.25req/s] [内存消耗：1,411.20kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/transport/public/static/index/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:37+08:00 ] 192.168.18.228 192.168.18.228 GET /transport/public/static/index/images/icon_4.jpg
+[ info ] 192.168.18.228/transport/public/static/index/images/icon_4.jpg [运行时间：0.030962s][吞吐率：32.30req/s] [内存消耗：1,411.20kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/transport/public/static/index/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:37+08:00 ] 192.168.18.228 192.168.18.228 GET /transport/public/static/index/images/icon_2.jpg
+[ info ] 192.168.18.228/transport/public/static/index/images/icon_2.jpg [运行时间：0.044938s][吞吐率：22.25req/s] [内存消耗：1,411.20kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/transport/public/static/index/css/style.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:42+08:00 ] ::1 ::1 GET /transport/public/index.php/admin/index/index.html
+[ info ] localhost/transport/public/index.php/admin/index/index.html [运行时间：0.164350s][吞吐率：6.08req/s] [内存消耗：1,734.29kb] [文件加载：49]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\WWW\transport\thinkphp\tpl\dispatch_jump1.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:42+08:00 ] 192.168.18.228 192.168.18.228 GET /transport/public/static/admin/css/bootstrap.min.css
+[ info ] 192.168.18.228/transport/public/static/admin/css/bootstrap.min.css [运行时间：0.027441s][吞吐率：36.44req/s] [内存消耗：1,411.10kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/transport/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:44+08:00 ] ::1 ::1 GET /transport/public/index.php/admin/index/index.html
+[ info ] localhost/transport/public/index.php/admin/index/index.html [运行时间：0.027583s][吞吐率：36.25req/s] [内存消耗：1,734.49kb] [文件加载：49]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] E:\WWW\transport\thinkphp\tpl\dispatch_jump1.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:44+08:00 ] 192.168.18.228 192.168.18.228 GET /transport/public/static/admin/css/bootstrap.min.css
+[ info ] 192.168.18.228/transport/public/static/admin/css/bootstrap.min.css [运行时间：0.022605s][吞吐率：44.24req/s] [内存消耗：1,411.07kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/transport/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:45+08:00 ] ::1 ::1 GET /transport/public/index.php/admin/login/login.html
+[ info ] localhost/transport/public/index.php/admin/login/login.html [运行时间：0.051613s][吞吐率：19.38req/s] [内存消耗：1,733.33kb] [文件加载：47]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/transport/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\Admin\controller\Login->login[ E:\WWW\transport\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] E:\WWW\transport\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:46+08:00 ] 192.168.18.228 192.168.18.228 GET /transport/public/static/admin/images/logopng
+[ info ] 192.168.18.228/transport/public/static/admin/images/logopng [运行时间：0.024232s][吞吐率：41.27req/s] [内存消耗：1,411.18kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/transport/public/static/admin/css/H-ui.login.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:46+08:00 ] ::1 ::1 GET /transport/public/index.php/captcha.html
+[ info ] localhost/transport/public/index.php/captcha.html [运行时间：0.267835s][吞吐率：3.73req/s] [内存消耗：1,438.11kb] [文件加载：39]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/transport/public/index.php/admin/login/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\WWW\transport\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:52+08:00 ] ::1 ::1 GET /transport/public/index.php/captcha.html?0.13484431900165972
+[ info ] localhost/transport/public/index.php/captcha.html?0.13484431900165972 [运行时间：0.039522s][吞吐率：25.30req/s] [内存消耗：1,438.43kb] [文件加载：39]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/transport/public/index.php/admin/login/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+  '0_13484431900165972' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\WWW\transport\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:56+08:00 ] ::1 ::1 POST /transport/public/index.php/admin/login/login.html
+[ info ] localhost/transport/public/index.php/admin/login/login.html [运行时间：0.113081s][吞吐率：8.84req/s] [内存消耗：2,809.55kb] [文件加载：58]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '43',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/transport/public/index.php/admin/login/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+  'adminid' => 'admin',
+  'adminpassword' => 'admin',
+  'code' => 'at8e',
+)
+[ info ] [ RUN ] app\Admin\controller\Login->login[ E:\WWW\transport\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\WWW\transport\thinkphp\tpl\dispatch_jump1.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010980s ] mysql:dbname=transport;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_admin` [ RunTime:0.029862s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_admin` WHERE  `adminid` = 'admin' LIMIT 1 [ RunTime:0.000425s ]
+---------------------------------------------------------------
+[ 2018-04-11T10:01:56+08:00 ] 192.168.18.228 192.168.18.228 GET /transport/public/static/admin/css/bootstrap.min.css
+[ info ] 192.168.18.228/transport/public/static/admin/css/bootstrap.min.css [运行时间：0.023198s][吞吐率：43.11req/s] [内存消耗：1,411.07kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/transport/public/index.php/admin/login/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:01:57+08:00 ] ::1 ::1 GET /transport/public/index.php/admin/login/login.html
+[ info ] localhost/transport/public/index.php/admin/login/login.html [运行时间：0.033241s][吞吐率：30.08req/s] [内存消耗：1,733.33kb] [文件加载：47]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/transport/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\Admin\controller\Login->login[ E:\WWW\transport\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] E:\WWW\transport\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:02:01+08:00 ] ::1 ::1 GET /transport/public/index.php/captcha.html?0.17237249868237914
+[ info ] localhost/transport/public/index.php/captcha.html?0.17237249868237914 [运行时间：0.038568s][吞吐率：25.93req/s] [内存消耗：1,438.43kb] [文件加载：39]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/transport/public/index.php/admin/login/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+  '0_17237249868237914' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ E:\WWW\transport\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:02:05+08:00 ] ::1 ::1 POST /transport/public/index.php/admin/login/login.html
+[ info ] localhost/transport/public/index.php/admin/login/login.html [运行时间：0.101823s][吞吐率：9.82req/s] [内存消耗：3,003.45kb] [文件加载：59]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '46',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/transport/public/index.php/admin/login/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+  'adminid' => 'admin',
+  'adminpassword' => '12181218',
+  'code' => 'dw27',
+)
+[ info ] [ RUN ] app\Admin\controller\Login->login[ E:\WWW\transport\application\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001275s ] mysql:dbname=transport;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_admin` [ RunTime:0.005543s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_admin` WHERE  `adminid` = 'admin' LIMIT 1 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_role` [ RunTime:0.006456s ]
+[ sql ] [ SQL ] SELECT `rolename`,`pri_id` FROM `tr_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_privilege` [ RunTime:0.005700s ]
+[ sql ] [ SQL ] SELECT `id`,`pri_name`,`module_name`,`controller_name`,`action_name`,`parent_id`,CONCAT(module_name,"/",action_name) url FROM `tr_privilege` WHERE  (  id IN(38,39,40,41,42,43,44,45,46,47,48,49,56,57,58,59,60,61,62,63,64,65,66,67,68,116,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,115,88,90,91,93,94,95,96,97,99,120,123,100,103,104,105,106,121,124,107,110,111,112,113,122,125,126,127,128,129,130,132,137,138,139,140,141,142,143,144,156,157,158,159,160,145,151,152,153,154,155,146,147,148,149,150,161,162,163,164,166,167,168,169,170,171,172,173,174,181,183,184,185,175,176,177,178,179,180,186,187,188,189,190,191,192,193,194,196) ) ORDER BY id asc [ RunTime:0.020753s ]
+---------------------------------------------------------------
+[ 2018-04-11T10:02:05+08:00 ] ::1 ::1 GET /transport/public/index.php/admin/index/index.html
+[ info ] localhost/transport/public/index.php/admin/index/index.html [运行时间：0.076928s][吞吐率：13.00req/s] [内存消耗：2,522.73kb] [文件加载：55]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/transport/public/index.php/admin/login/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\WWW\transport\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\WWW\transport\public/../application/admin\view\index\index.html [ array (
+  0 => 'adminname',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001365s ] mysql:dbname=transport;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_role` [ RunTime:0.007130s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000635s ]
+---------------------------------------------------------------
+[ 2018-04-11T10:02:05+08:00 ] ::1 ::1 GET /transport/public/index.php/admin/index/welcome.html
+[ info ] localhost/transport/public/index.php/admin/index/welcome.html [运行时间：0.050614s][吞吐率：19.76req/s] [内存消耗：1,729.77kb] [文件加载：47]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/transport/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ E:\WWW\transport\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] E:\WWW\transport\public/../application/admin\view\index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:02:05+08:00 ] ::1 ::1 GET /transport/public/index.php/admin/index/__PUBIC__/css/H-ui.min.css
+[ info ] localhost/transport/public/index.php/admin/index/__PUBIC__/css/H-ui.min.css [运行时间：0.035929s][吞吐率：27.83req/s] [内存消耗：1,763.61kb] [文件加载：49]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => '__PUBIC__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://localhost/transport/public/index.php/admin/index/welcome.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+  'css' => 'H-ui.min.css',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:02:05+08:00 ] ::1 ::1 GET /transport/public/index.php/admin/index/js/H-ui.js
+[ info ] localhost/transport/public/index.php/admin/index/js/H-ui.js [运行时间：0.043317s][吞吐率：23.09req/s] [内存消耗：1,763.15kb] [文件加载：49]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/transport/public/index.php/admin/index/welcome.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:02:05+08:00 ] ::1 ::1 GET /transport/public/index.php/admin/index/lib/jquery/1.9.1/jquery.min.js
+[ info ] localhost/transport/public/index.php/admin/index/lib/jquery/1.9.1/jquery.min.js [运行时间：0.053422s][吞吐率：18.72req/s] [内存消耗：1,763.62kb] [文件加载：49]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'lib',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/transport/public/index.php/admin/index/welcome.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+  'jquery' => '1.9.1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:02:05+08:00 ] ::1 ::1 GET /transport/public/index.php/admin/index/js/H-ui.js
+[ info ] localhost/transport/public/index.php/admin/index/js/H-ui.js [运行时间：0.038868s][吞吐率：25.73req/s] [内存消耗：1,763.15kb] [文件加载：49]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/transport/public/index.php/admin/index/welcome.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1519887805; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T10:03:01+08:00 ] ::1 ::1 GET /transport/public/index.php/admin/user/checklst.html
+[ info ] localhost/transport/public/index.php/admin/user/checklst.html [运行时间：0.157982s][吞吐率：6.33req/s] [内存消耗：3,167.02kb] [文件加载：60]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'checklst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/transport/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523412126; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523412126',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->checklst[ E:\WWW\transport\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\WWW\transport\public/../application/admin\view\user\check-list.html [ array (
+  0 => 'type',
+  1 => 'counts',
+  2 => 'list',
+  3 => 'page',
+  4 => 'privilege',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010249s ] mysql:dbname=transport;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_role` [ RunTime:0.007254s ]
+[ sql ] [ SQL ] SELECT `pri_id` FROM `tr_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_usertype` [ RunTime:0.005264s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_usertype` ORDER BY id desc [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_user` [ RunTime:0.006365s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tr_user` WHERE  `check_state` = '3'  AND `is_recycle` = 0  AND `type` <> '' LIMIT 1 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_user` WHERE  `check_state` = '3'  AND `is_recycle` = 0  AND `type` <> '' ORDER BY id desc LIMIT 0,12 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tr_user` WHERE  `check_state` = '3'  AND `is_recycle` = 0  AND `type` <> '' ORDER BY id desc LIMIT 1 [ RunTime:0.011540s ]
+---------------------------------------------------------------
+[ 2018-04-11T10:03:04+08:00 ] ::1 ::1 GET /transport/public/index.php/admin/usertype/lst.html
+[ info ] localhost/transport/public/index.php/admin/usertype/lst.html [运行时间：0.151285s][吞吐率：6.61req/s] [内存消耗：2,979.70kb] [文件加载：60]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'usertype',
+    2 => 'lst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/transport/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,fr-FR;q=0.7,fr;q=0.6,ko;q=0.5,ja;q=0.4,th;q=0.3,en-US;q=0.2,en-GB;q=0.1',
+  'cookie' => 'pgv_pvi=8745608192; ECS[visit_times]=10; ext_type=1; PHPSESSID=vt6i1jsdjeckq158bsf1udf2u1; Hm_lvt_080836300300be57b7f34f4b3e97d911=1523412126; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1523412126',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Usertype->lst[ E:\WWW\transport\application\admin\controller\Usertype.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\WWW\transport\public/../application/admin\view\usertype\usertype-list.html [ array (
+  0 => 'counts',
+  1 => 'list',
+  2 => 'page',
+  3 => 'privilege',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011238s ] mysql:dbname=transport;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_role` [ RunTime:0.006769s ]
+[ sql ] [ SQL ] SELECT `pri_id` FROM `tr_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tr_usertype` [ RunTime:0.005349s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tr_usertype` LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `tr_usertype` ORDER BY id desc LIMIT 0,12 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tr_usertype` ORDER BY id desc LIMIT 1 [ RunTime:0.000442s ]
+---------------------------------------------------------------
+[ 2018-04-11T11:01:31+08:00 ] 192.168.18.228 192.168.16.195 GET /transport/public/static/index/images/icon_4.jpg
+[ info ] 192.168.18.228/transport/public/static/index/images/icon_4.jpg [运行时间：0.026048s][吞吐率：38.39req/s] [内存消耗：1,410.95kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/transport/public/static/index/css/style.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T11:01:31+08:00 ] 192.168.18.228 192.168.16.195 GET /transport/public/static/index/images/icon_2.jpg
+[ info ] 192.168.18.228/transport/public/static/index/images/icon_2.jpg [运行时间：0.029015s][吞吐率：34.46req/s] [内存消耗：1,410.95kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/transport/public/static/index/css/style.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T11:01:31+08:00 ] 192.168.18.228 192.168.16.195 GET /transport/public/static/index/images/icon_5.jpg
+[ info ] 192.168.18.228/transport/public/static/index/images/icon_5.jpg [运行时间：0.023813s][吞吐率：41.99req/s] [内存消耗：1,410.95kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/transport/public/static/index/css/style.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-11T11:01:31+08:00 ] 192.168.18.228 192.168.16.195 GET /transport/public/static/index/images/loading.gif
+[ info ] 192.168.18.228/transport/public/static/index/images/loading.gif [运行时间：0.028114s][吞吐率：35.57req/s] [内存消耗：1,410.81kb] [文件加载：40]
+[ info ] [ LANG ] E:\WWW\transport\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.18.228',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://192.168.18.228/transport/public/static/index/css/higo.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
