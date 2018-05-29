@@ -48,6 +48,7 @@ h1 {
 }
 .file_list_center .file_detail {
   height: 50px;
+  overflow: hidden;
   line-height: 50px;
   margin: 10px 15px 0 15px;
   font-size: 18px;

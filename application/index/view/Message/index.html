@@ -13,7 +13,7 @@
   <div class="wrap">
     <div class="center">
       <div class="left_content">
-        <p class="top_text">留言展示<a href="javascript:;" id="more1">更多>></a></p>
+        <p class="top_text">留言展示<a href="javascript:;" id="more1">更多>></a><a style="display: none;margin-left: 750px;" href="javascript:;" id="less1"><<返回</a></p>
         <h6 style="width: 690px;height: 3px;margin-top: 8px;background-color: #eee;"></h6>
         {volist name="good_message" id="vo"}
           <div class="left_detail">
@@ -32,12 +32,23 @@
         $(function () {
           $("#more1").on("click", function () {
             $(".right_content").hide();
+            $('h6').css('width','1000px');
             $(".left_content").css("width", "1010px");
-            $("h1").css('width','1010px');
+            $("h1").css('width','690');
             $(".left_detail").each(function () {
-              $(this).children("p").eq(0).children("span").css('float','right');
+            $(this).children("p").eq(0).children("span").css('float','right');
             });
-            $(this).hide();
+            $(this).hide().siblings().show();
+          }).siblings().on('click',function(){
+            $(".right_content").show();
+            $('h6').css('width','690px');
+            $(".left_content").css("width", "690");
+            $("h1").css('width','690');
+            $(".left_detail").each(function () {
+            $(this).children("p").eq(0).children("span").css('float','none');
+            
+            });
+            $(this).hide().siblings().show();
           });
         })
       </script>

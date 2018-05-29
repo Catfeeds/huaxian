@@ -43,7 +43,7 @@ s,i,em{font-style:normal;text-decoration:none;}
 /*所有的body都用此图片*/
 body {
     background: url(../images/背景图.png) no-repeat top center;
-    background-size: 1200px 1405px;
+    background-size: 1200px auto;
 }
 
 /*             弹窗               */
@@ -59,7 +59,7 @@ body {
 .popup_detail{
     width: 737px;
     height: 567px;
-    margin: 12% auto;
+    margin: 2% auto;
     background-color: #fff;
     border-radius: 8px;
 }
