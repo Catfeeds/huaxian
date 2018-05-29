@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"E:\WWW\huaxian\public/../application/admin\view\work\dianli-edit.html";i:1526518984;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"E:\WWW\huaxian\public/../application/admin\view\work\dianli-edit.html";i:1527472565;}*/ ?>
    <!DOCTYPE HTML>
 <html>
 <head>
@@ -16,7 +16,7 @@
 <link href="__PUBLIC__/css/H-ui.min.css" rel="stylesheet" type="text/css" />
 <link href="__PUBLIC__/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
 <link href="__PUBLIC__/lib/icheck/icheck.css" rel="stylesheet" type="text/css" />
-<link href="../../../static/admin/lib/Hui-iconfont/1.0.1/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../static/admin/lib/Hui-iconfont/1.0.1/iconfont.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="__PUBLIC__/js/jquery.simplePagination.js"></script> 
 <link type="text/css" rel="stylesheet" href="__PUBLIC__/css/page.css"/>
 <!--[if IE 6]>
@@ -75,8 +75,8 @@
                 <div class="col-1"> </div>
             </div>
             <div class="row cl" style="margin-top: 20px;margin-left: 200px;">
-                <label class="form-label col-2" style="width: 140px"><span class="c-red">*</span>申报材料：</label>
-                <div class="formControls col-8"> 
+                <label class="form-label col-3" style="width: 140px"><span class="c-red">*</span>申报材料：</label>
+                <div class="formControls col-6"> 
                     <textarea name="content" id="content" style="width:100%; height: 700px;" ><?php echo $list['content']; ?></textarea> 
                 </div>
             </div>

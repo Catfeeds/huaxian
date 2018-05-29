@@ -122,7 +122,10 @@ class File extends Base{
         $id = input('id');
         $file = db('neibufile')->find($id);  
         $file_name = $file['fileurl'];     //下载文件的路径名      
-        $file_dir = ROOT_PATH . 'public' . DS .'upfiles' . "/";   //下载文件存放目录    
+        $file_dir = ROOT_PATH . 'public' . DS .'upfiles' . "/";   //下载文件存放目录
+
+        $file['file'] = iconv("utf-8","gb2312",$file['file']);
+
         echo $file_dir . $file_name;  
         //检查文件是否存在      
         if (! file_exists ( $file_dir . $file_name )) {      
@@ -136,7 +139,7 @@ class File extends Base{
             Header ( "Accept-Ranges: bytes" );      
             Header ( "Accept-Length: " . filesize ( $file_dir . $file_name ) ); 
             //显示下载的文件名     
-            Header ( "Content-Disposition: attachment; filename=" . $file['file'] );
+            Header ( "Content-Disposition: attachment; filename=" . $file['file'] ); 
             ob_clean();    //重点！！！
             flush();       //重点！！！！  可清除文件中多余的路径名以及解决乱码的问题；
             //输出文件内容       

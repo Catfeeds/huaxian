@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"E:\WWW\huaxian\public/../application/admin\view\work\gongshui-edit.html";i:1526519001;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"E:\WWW\huaxian\public/../application/admin\view\work\gongshui-edit.html";i:1527473922;}*/ ?>
    <!DOCTYPE HTML>
 <html>
 <head>
@@ -16,7 +16,7 @@
 <link href="__PUBLIC__/css/H-ui.min.css" rel="stylesheet" type="text/css" />
 <link href="__PUBLIC__/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
 <link href="__PUBLIC__/lib/icheck/icheck.css" rel="stylesheet" type="text/css" />
-<link href="../../../static/admin/lib/Hui-iconfont/1.0.1/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../static/admin/lib/Hui-iconfont/1.0.1/iconfont.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="__PUBLIC__/js/jquery.simplePagination.js"></script> 
 <link type="text/css" rel="stylesheet" href="__PUBLIC__/css/page.css"/>
 <!--[if IE 6]>

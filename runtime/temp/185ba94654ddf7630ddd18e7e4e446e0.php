@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"E:\WWW\huaxian\public/../application/admin\view\news\news-add.html";i:1526538323;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"E:\WWW\huaxian\public/../application/admin\view\news\news-add.html";i:1527472906;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -87,7 +87,7 @@
 			<div class="col-10 col-offset-2">
 				<button onClick="article_save_submit();" class="btn btn-primary radius" type="submit">
                 <i class="Hui-iconfont">&#xe632;</i> 提交</button>
-				<button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+				<button onClick="layer_close();" class="btn btn-default radius" type="reset">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
 			</div>
 		</div>
 	</form>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"E:\WWW\huaxian\public/../application/index\view\index\filedetail.html";i:1526948740;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527130003;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527071150;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:69:"E:\WWW\huaxian\public/../application/index\view\index\filedetail.html";i:1526948740;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527241151;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527071150;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,13 +102,28 @@
             </div>
             <div class="top-nav">
                 <ul>
-                    <li class="current"><a href="<?php echo url('Index/index'); ?>">首页</a></li>
-                    <li><a href="<?php echo url('Gov/index'); ?>">政治风貌</a></li>
-                    <li><a href="<?php echo url('City/index'); ?>">城市建设</a></li>
-                    <li><a href="<?php echo url('Company/index'); ?>">企业风采</a></li>
-                    <li><a href="<?php echo url('Work/index'); ?>">办事指南</a></li>
-                    <li><a href="<?php echo url('Message/index'); ?>">进言献策</a></li>
-                    <li><a href="<?php echo url('Call/call'); ?>">联系我们</a></li>
+                    <li tipName='产品聚集区官网'><a href="<?php echo url('Index/index'); ?>">首页</a></li>
+                    <li tipName='政府风貌'><a href="<?php echo url('Gov/index'); ?>">政治风貌</a></li>
+                    <li tipName='城市建设'><a href="<?php echo url('City/index'); ?>">城市建设</a></li>
+                    <li tipName='企业风采'><a href="<?php echo url('Company/index'); ?>">企业风采</a></li>
+                    <li tipName='办事指南'><a href="<?php echo url('Work/index'); ?>">办事指南</a></li>
+                    <li tipName='进言献策'><a href="<?php echo url('Message/index'); ?>">进言献策</a></li>
+                    <li tipName='联系我们'><a href="<?php echo url('Call/call'); ?>">联系我们</a></li>
+                    <script>
+                    $(function(){
+                        /*var str = window.location;
+                        str = str.toString();
+                        
+                        alert(str.length);*/
+                        var name = $('title').text();
+                        $('.top-nav li').each(function(){
+                            if($(this).attr('tipName') == name){
+                                $(this).addClass('current').siblings().removeClass('current');
+                            }
+                        })
+                    })
+
+                    </script>
                 </ul>
             </div>
         </div>
