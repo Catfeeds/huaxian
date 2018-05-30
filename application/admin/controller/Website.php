@@ -170,6 +170,62 @@ class Website extends Base{
 		return $this->fetch('linkadd-success');
 	}
 
+	//编辑友情链接
+	public function linkedit(){
+		$id=input('id');
+		$this->assign('id',$id);
+		$list = db('link')->find($id);
+		$this->assign('list',$list);
+		if(request()->isPost()){
+			$data['id']=$id;
+			// $data['image']=input('image'); 
+			$data['linkurl']=input('linkurl');
+			$data['user']=session('adminid'); 
+			$data['time']=date('Y-m-d H:i:s');
+			if($data['linkurl']!=''){
+				if(db('link')->update($data)){
+					return $this->redirect('Website/linkedit_success');
+				}else{
+					return $this->error('修改失败');
+				}
+			}else{
+                return $this->error('链接地址不能为空！');
+			}
+		}
+		return $this->fetch('link-edit');
+	}
+	//修改友情链接图片
+	public function linkedit1(){
+		$id=input('id');
+		$this->assign('id',$id);
+		// $list = db('imgs')->find($id);
+		// $this->assign('list',$list);
+		if(request()->isPost()){
+			$data['id']=$id;
+			$data['image']=input('image'); 
+			// $data['name']=input('name');
+			$data['user']=session('adminid'); 
+			$data['time']=date('Y-m-d H:i:s');
+			if($data['image']!=''){
+				$file=request()->file('image');
+				$info=$file->move(ROOT_PATH . 'public' . DS .'static/upimages');
+				$data['image']='/upimages/'.$info->getSaveName();
+				if(db('link')->update($data)){
+					return $this->redirect('Website/linkedit_success');
+				}else{
+					return $this->error('修改失败');
+				}
+			}else{
+                return $this->error('图片不能为空！');
+			}
+		}
+		return $this->fetch('edit_link');
+	}
+	//编辑成功
+	public function linkedit_success(){
+		return $this->fetch('linkedit-success');
+	}
+
 	//删除友情链接
 	public function linkdel(){
 		$id=input('id');

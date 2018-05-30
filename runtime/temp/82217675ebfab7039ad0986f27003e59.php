@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"E:\WWW\huaxian\public/../application/index\view\index\file.html";i:1527068063;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527241151;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527471877;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"E:\WWW\huaxian\public/../application/index\view\index\file.html";i:1527068063;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527587046;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,23 +52,23 @@
                 <div class="right">
                     <div class="select">
                         <div class="dt">文件</div>
-                        <div class="box2" style="display: none;">
-                            <div class="dd" name='wenjian'>文件</div>
-                            <div class="dd" name='zhengce'>政策</div>
-                            <div class="dd" name='xinwen'>新闻</div>
-                        </div>
+                        <!-- <div class="box2" style="display: none;"> -->
+                        <div class="dd" style="display: none;" name='wenjian'>文件</div>
+                        <div class="dd" style="display: none;" name='zhengce'>政策</div>
+                        <div class="dd" style="display: none;" name='xinwen'>新闻</div>
+                        <!-- </div -->
                     </div>
                     <script>
                         $(function () {
-                            $('.dt').on('mouseenter', function () {
-                                $('.box2').toggle();
+                            $('.select').on('mouseenter', function () {
+                                $('.dd').show();
                             });
-                            $('.box2').on('mouseleave', function () {
-                                $('.box2').hide();
+                            $('.select').on('mouseleave', function () {
+                                $('.dd').hide();
                             });
-                            $('.box2 .dd').on('click', function (event) {
+                            $('.dd').on('click', function (event) {
                                 $('.dt').text($(this).text());
-                                $('.box2').hide();
+                                $('.dd').hide();
                                 // $('input').attr('placeholder','请输入'+$(this).text()+'信息.......');
                                 var str = $(this).attr('name');
                                 /*alert(str);*/

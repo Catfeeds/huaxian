@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"E:\WWW\huaxian\public/../application/index\view\city\plandetail.html";i:1526888015;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527241151;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527071150;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"E:\WWW\huaxian\public/../application/index\view\city\plandetail.html";i:1526888015;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527587046;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,23 +55,23 @@
                 <div class="right">
                     <div class="select">
                         <div class="dt">文件</div>
-                        <div class="box2" style="display: none;">
-                            <div class="dd" name='wenjian'>文件</div>
-                            <div class="dd" name='zhengce'>政策</div>
-                            <div class="dd" name='xinwen'>新闻</div>
-                        </div>
+                        <!-- <div class="box2" style="display: none;"> -->
+                        <div class="dd" style="display: none;" name='wenjian'>文件</div>
+                        <div class="dd" style="display: none;" name='zhengce'>政策</div>
+                        <div class="dd" style="display: none;" name='xinwen'>新闻</div>
+                        <!-- </div -->
                     </div>
                     <script>
                         $(function () {
-                            $('.dt').on('mouseenter', function () {
-                                $('.box2').toggle();
+                            $('.select').on('mouseenter', function () {
+                                $('.dd').show();
                             });
-                            $('.box2').on('mouseleave', function () {
-                                $('.box2').hide();
+                            $('.select').on('mouseleave', function () {
+                                $('.dd').hide();
                             });
-                            $('.box2 .dd').on('click', function (event) {
+                            $('.dd').on('click', function (event) {
                                 $('.dt').text($(this).text());
-                                $('.box2').hide();
+                                $('.dd').hide();
                                 // $('input').attr('placeholder','请输入'+$(this).text()+'信息.......');
                                 var str = $(this).attr('name');
                                 /*alert(str);*/
@@ -320,7 +320,7 @@
                 <h3>友情链接</h3>
                 <div class="link-to clearfix">
                     <?php if(is_array($link) || $link instanceof \think\Collection || $link instanceof \think\Paginator): $i = 0; $__LIST__ = $link;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                    <a href="##"><img src="__IMG__/<?php echo $vo['image']; ?>" alt=""></a>
+                    <a href="<?php echo $vo['linkurl']; ?>"><img src="__IMG__/<?php echo $vo['image']; ?>" alt=""></a>
                     <!-- <a href="##"><img src="__PUBLIC__/images/link2.png" alt=""></a> -->
                     <!-- <a href="##"><img src="__PUBLIC__/images/link3.png" alt=""></a> -->
                     <!-- <a href="##"><img src="__PUBLIC__/images/link4.png" alt=""></a> -->

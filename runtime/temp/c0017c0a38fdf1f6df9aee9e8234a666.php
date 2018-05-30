@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"E:\WWW\huaxian\public/../application/admin\view\website\lst_link.html";i:1525921906;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"E:\WWW\huaxian\public/../application/admin\view\website\lst_link.html";i:1527639839;}*/ ?>
 ﻿   <!DOCTYPE HTML>
 <html>
 <head>
@@ -64,6 +64,8 @@
 				    <td><?php echo $v['user']; ?></td>
 				    <td><?php echo $v['time']; ?></td>
 				    <td class="td-manage">
+				    	<a title="编辑"  href="<?php echo url('Website/linkedit',array('id'=>$v['id'])); ?>" class="ml-5" style="text-decoration:none">
+                        <i class="Hui-iconfont">&#xe6df;</i></a>
                         <a title="删除" href="<?php echo url('Website/linkdel',array('id'=>$v['id'])); ?>"  onclick="return confirm('确定要删除吗？')" class="ml-5" style="text-decoration:none">
                         <i class="Hui-iconfont">&#xe6e2;</i></a>
 				    </td>

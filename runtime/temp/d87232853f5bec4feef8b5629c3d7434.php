@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:66:"E:\WWW\huaxian\public/../application/index\view\message\index.html";i:1527150344;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527241151;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527471877;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:66:"E:\WWW\huaxian\public/../application/index\view\message\index.html";i:1527587046;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527587046;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,23 +54,23 @@
                 <div class="right">
                     <div class="select">
                         <div class="dt">文件</div>
-                        <div class="box2" style="display: none;">
-                            <div class="dd" name='wenjian'>文件</div>
-                            <div class="dd" name='zhengce'>政策</div>
-                            <div class="dd" name='xinwen'>新闻</div>
-                        </div>
+                        <!-- <div class="box2" style="display: none;"> -->
+                        <div class="dd" style="display: none;" name='wenjian'>文件</div>
+                        <div class="dd" style="display: none;" name='zhengce'>政策</div>
+                        <div class="dd" style="display: none;" name='xinwen'>新闻</div>
+                        <!-- </div -->
                     </div>
                     <script>
                         $(function () {
-                            $('.dt').on('mouseenter', function () {
-                                $('.box2').toggle();
+                            $('.select').on('mouseenter', function () {
+                                $('.dd').show();
                             });
-                            $('.box2').on('mouseleave', function () {
-                                $('.box2').hide();
+                            $('.select').on('mouseleave', function () {
+                                $('.dd').hide();
                             });
-                            $('.box2 .dd').on('click', function (event) {
+                            $('.dd').on('click', function (event) {
                                 $('.dt').text($(this).text());
-                                $('.box2').hide();
+                                $('.dd').hide();
                                 // $('input').attr('placeholder','请输入'+$(this).text()+'信息.......');
                                 var str = $(this).attr('name');
                                 /*alert(str);*/
@@ -291,7 +291,7 @@
   <div class="wrap">
     <div class="center">
       <div class="left_content">
-        <p class="top_text">留言展示<a href="javascript:;" id="more1">更多>></a></p>
+        <p class="top_text">留言展示<a href="javascript:;" id="more1">更多>></a><a style="display: none;margin-left: 750px;" href="javascript:;" id="less1"><<返回</a></p>
         <h6 style="width: 690px;height: 3px;margin-top: 8px;background-color: #eee;"></h6>
         <?php if(is_array($good_message) || $good_message instanceof \think\Collection || $good_message instanceof \think\Paginator): $i = 0; $__LIST__ = $good_message;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
           <div class="left_detail">
@@ -310,12 +310,23 @@
         $(function () {
           $("#more1").on("click", function () {
             $(".right_content").hide();
+            $('h6').css('width','1000px');
             $(".left_content").css("width", "1010px");
-            $("h1").css('width','1010px');
+            $("h1").css('width','690');
             $(".left_detail").each(function () {
-              $(this).children("p").eq(0).children("span").css('float','right');
+            $(this).children("p").eq(0).children("span").css('float','right');
             });
-            $(this).hide();
+            $(this).hide().siblings().show();
+          }).siblings().on('click',function(){
+            $(".right_content").show();
+            $('h6').css('width','690px');
+            $(".left_content").css("width", "690");
+            $("h1").css('width','690');
+            $(".left_detail").each(function () {
+            $(this).children("p").eq(0).children("span").css('float','none');
+            
+            });
+            $(this).hide().siblings().show();
           });
         })
       </script>
