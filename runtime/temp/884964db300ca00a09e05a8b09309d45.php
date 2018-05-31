@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"E:\WWW\huaxian\public/../application/admin\view\city\lst_yuanqu.html";i:1526367533;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"E:\WWW\huaxian\public/../application/admin\view\city\lst_yuanqu.html";i:1527675362;}*/ ?>
 ﻿   <!DOCTYPE HTML>
 <html>
 <head>
@@ -75,8 +75,13 @@
     </span>
     </div>
     <div class="mt-20">
-	    
-	    <div class="row cl" style="margin-left: 200px;">
+	    <div class="row cl" style="margin-top: 40px; margin-left: 250px;" >
+        <label class="form-label col-2" style="width: 90px">描述：</label>
+        <div class="formControls col-8">
+            <textarea name="description" class="textarea"  placeholder="请输入园区规划描述内容..."  dragonfly="true" nullmsg="内容不能为空！" readonly="true" onKeyUp="textarealength(this,300)"><?php echo $list['description']; ?></textarea>
+        </div>
+      </div>
+	    <div class="row cl" style="margin-top: 20px;margin-left: 200px;">
 	      	<label class="form-label col-2" style="width: 140px"><span class="c-red">*</span>园区规划内容：</label>
 	      	<div class="formControls col-8"> 
 	        	<textarea name="content" id="content" style="width:100%; height: 700px;" readonly="true" ><?php echo $list['content']; ?></textarea> 

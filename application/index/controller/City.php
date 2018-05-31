@@ -12,6 +12,30 @@ class City extends Base1{
         $jinhe = db('jinhe')->order('id desc')->select();
         $this->assign('jinhe',$jinhe);
 
+        //基础设施表
+        $basic = db('basics')->order('id desc')->find();
+        $this->assign('basic',$basic);
+
+        //主导产业定位
+        $main = db('main')->order('id desc')->find();
+        $this->assign('main',$main);
+
+        //远期规划
+        $plan = db('plan')->order('id desc')->find();
+        $this->assign('plan',$plan);
+
+        //园区规划
+        $yuanqu = db('yuanqu')->order('id desc')->find();
+        $this->assign('yuanqu',$yuanqu);
+
+        //六通一平
+        $liutong = db('liutong')->order('id desc')->find();
+        $this->assign('liutong',$liutong);
+
+        //污水处理厂
+        $water = db('water')->order('id desc')->find();
+        $this->assign('water',$water);
+
 		return $this->fetch('index');
 	}
 	//基础设施

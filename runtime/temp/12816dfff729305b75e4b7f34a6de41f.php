@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"E:\WWW\huaxian\public/../application/index\view\city\plandetail.html";i:1526888015;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527587046;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"E:\WWW\huaxian\public/../application/index\view\city\plandetail.html";i:1526888015;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527665511;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -75,7 +75,7 @@
                                 // $('input').attr('placeholder','请输入'+$(this).text()+'信息.......');
                                 var str = $(this).attr('name');
                                 /*alert(str);*/
-                                $('form').hide();
+                                $('.xuanze').hide();
                                 $('.'+str).show();
                                 return false;
                             })
@@ -86,15 +86,15 @@
                             width: 340px;
                         }
                     </style>
-                    <form class="wenjian left" action="<?php echo url('Index/search_file'); ?>" method="post" enctype="multipart/form-data">
+                    <form class="wenjian left xuanze" action="<?php echo url('Index/search_file'); ?>" method="post" enctype="multipart/form-data">
                         <input class="left" placeholder="请输入要搜索的政府文件" type="search" name="keywords" id="" value="">
                         <button class="left">搜索</button>
                     </form>
-                    <form class="zhengce left" style="display: none;" action="<?php echo url('Index/search_zhengce'); ?>" method="post" enctype="multipart/form-data">
+                    <form class="zhengce left xuanze" style="display: none;" action="<?php echo url('Index/search_zhengce'); ?>" method="post" enctype="multipart/form-data">
                         <input class="left" placeholder="请输入要搜索的政策标题" type="search" name="keywords" id="" value="">
                         <button class="left">搜索</button>
                     </form>
-                    <form class="xinwen left" style="display: none" action="<?php echo url('Index/search_news'); ?>" method="post" enctype="multipart/form-data">
+                    <form class="xinwen left xuanze" style="display: none" action="<?php echo url('Index/search_news'); ?>" method="post" enctype="multipart/form-data">
                         <input class="left" placeholder="请输入要搜索的新闻标题" type="search" name="keywords" id="" value="">
                         <button class="left">搜索</button>
                     </form>

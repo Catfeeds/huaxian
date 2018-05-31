@@ -192,6 +192,7 @@ ul,li{ list-style:none;}
     color: #000;
     padding-left: 20px;
     background: url(../images/point.png) no-repeat 10px 7px;
+    font-size: 15px;
 }
 .slider1 .right .notice ul li ul li a:hover {
     color: #c40000;
@@ -200,6 +201,7 @@ ul,li{ list-style:none;}
     float: right;
     padding-right: 20px;
     color: #999;
+    font-size: 15px;
 }
 .carousel .bana_title{
     position: absolute;

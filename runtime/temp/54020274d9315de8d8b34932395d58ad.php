@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"E:\WWW\huaxian\public/../application/admin\view\city\liutong-edit.html";i:1526608322;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"E:\WWW\huaxian\public/../application/admin\view\city\liutong-edit.html";i:1527675536;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -57,6 +57,12 @@
 <div class="pd-20">
   <form action="<?php echo url('City/liutongedit'); ?>" method="post" class="form form-horizontal" enctype="multipart/form-data">
     <input type="hidden" name="id" value="<?php echo $id; ?>">
+        <div class="row cl" style="margin-top: 40px; margin-left: 295px;" >
+          <label class="form-label col-3" style="width: 120px"><span class="c-red">*</span>描述内容：</label>
+          <div class="formControls col-8">
+              <textarea name="description" class="textarea"  placeholder="请输入六通一平描述相关内容..."  dragonfly="true" nullmsg="内容不能为空！" onKeyUp="textarealength(this,300)"><?php echo $list['description']; ?></textarea>
+          </div>
+        </div>
         <div class="row cl">
           <label class="form-label col-3"><span class="c-red">*</span>六通一平内容：</label>
           <div class="formControls col-8"> 

@@ -110,7 +110,7 @@
     left: 0;
     top: 45px;
 }
-.select .dt,.select .dd {
+.select .dt,.select .ddselect {
     width: 80px;
     height: 45px;
     line-height: 45px;
@@ -124,7 +124,7 @@
     background: url(../images/tb.png) no-repeat 63px center;
     background-size: 10px 5px;
 }
-.select .dd:hover {
+.select .ddselect:hover {
     background-color: #c2c287;
 }
 /*footer开始*/

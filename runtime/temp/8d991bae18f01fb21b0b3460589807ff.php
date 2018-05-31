@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"E:\WWW\huaxian\public/../application/admin\view\city\liutong-add.html";i:1526368096;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"E:\WWW\huaxian\public/../application/admin\view\city\liutong-add.html";i:1527675507;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -56,6 +56,12 @@
  href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
 <div class="pd-20">
   <form action="<?php echo url('City/liutongadd'); ?>" method="post" class="form form-horizontal" enctype="multipart/form-data">
+    <div class="row cl" style="margin-top: 40px;">
+      <label class="form-label col-3"><span class="c-red">*</span>描述：</label>
+      <div class="formControls col-8">
+          <textarea name="description" class="textarea"  placeholder="请输入六通一平的相关描述内容..." nullmsg="描述内容不能为空！" onKeyUp="textarealength(this,300)"></textarea>
+      </div>
+    </div>
     <div class="row cl">
       <label class="form-label col-3"><span class="c-red">*</span>六通一平内容：</label>
       <div class="formControls col-8"> 

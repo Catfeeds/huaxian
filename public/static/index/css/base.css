@@ -12,7 +12,8 @@ table { border-collapse:collapse; }
 body {
     font:12px/150% Arial,Verdana,"\5b8b\4f53";
     color:#666;
-    background:#fff
+    background:#fff;
+    overflow-x: hidden;
 }
 .clearfix:before,.clearfix:after {
     content:"";
@@ -44,6 +45,7 @@ s,i,em{font-style:normal;text-decoration:none;}
 body {
     background: url(../images/背景图.png) no-repeat top center;
     background-size: 1200px auto;
+
 }
 
 /*             弹窗               */

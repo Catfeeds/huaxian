@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"E:\WWW\huaxian\public/../application/admin\view\city\basics-edit.html";i:1526607591;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"E:\WWW\huaxian\public/../application/admin\view\city\basics-edit.html";i:1527674108;}*/ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -58,6 +58,12 @@
   <form action="<?php echo url('City/basicsedit'); ?>" method="post" class="form form-horizontal" enctype="multipart/form-data">
     <input type="hidden" name="id" value="<?php echo $id; ?>">
     <div class="row cl" style="margin-top: 40px; margin-left: 200px;" >
+      <label class="form-label col-2" style="width: 90px"><span class="c-red">*</span>描述内容：</label>
+      <div class="formControls col-5">
+          <textarea name="description" class="textarea"  placeholder="请输入基础设施描述相关内容..."  dragonfly="true" nullmsg="内容不能为空！" onKeyUp="textarealength(this,300)"><?php echo $list['description']; ?></textarea>
+      </div>
+    </div>
+    <div class="row cl" style="margin-top: 20px; margin-left: 200px;" >
       <label class="form-label col-2" style="width: 90px"><span class="c-red">*</span>卫生内容：</label>
       <div class="formControls col-5">
           <textarea name="health" class="textarea"  placeholder="请输入卫生相关内容..."  dragonfly="true" nullmsg="内容不能为空！" onKeyUp="textarealength(this,300)"><?php echo $list['health']; ?></textarea>

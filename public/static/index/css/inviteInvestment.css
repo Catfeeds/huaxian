@@ -65,25 +65,38 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.poor_detail li a {
+/*.poor_detail li a {
   display: inline-block;
   width: 370px;
   color: #3c3c3c;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
+}*/
 .poor_detail li:hover a {
   color: #0c6ad4;
 }
 .poor_detail li:hover span {
   color: #0c6ad4;
 }
-.poor_detail li span {
+/*.poor_detail li span {
   float: right;
   margin-right: 30px;
   cursor: pointer;
-}
+}*/
 .poor_detail li:nth-child(odd) {
   border-right: 1px solid #eee;
+}
+.poor_list li a span.poorTitle {
+    display: inline-block;
+    width: 75%;
+    color: #3c3c3c;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.poor_list li a span.poorDetail {
+  float: right;
+  width: 20%;
+  cursor: pointer;
 }

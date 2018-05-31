@@ -19,7 +19,7 @@
         <p class="poor_title">扶贫信息</p>
         <ul class="poor_list">
           {volist name="help" id="vo"}
-            <li><a href="{:url('Index/helpzhengcedetail',array('id'=>$vo.id))}">{$vo.title}</a><span>查看详情</span></li>
+            <li><a href="{:url('Index/helpzhengcedetail',array('id'=>$vo.id))}"><span class="poorTitle">{$vo.title}</span><span class="poorDetail">查看详情</span></a></li>
           {/volist}
           <!-- <li><a href="#">云峰非也云峰非也云峰</a><span>查看详情</span></li> -->
           

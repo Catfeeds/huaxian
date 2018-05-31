@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"E:\WWW\huaxian\public/../application/index\view\gov\lst_leader.html";i:1527586945;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527587046;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"E:\WWW\huaxian\public/../application/index\view\gov\lst_leader.html";i:1527586945;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527726933;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,26 +54,26 @@
                     <div class="select">
                         <div class="dt">文件</div>
                         <!-- <div class="box2" style="display: none;"> -->
-                        <div class="dd" style="display: none;" name='wenjian'>文件</div>
-                        <div class="dd" style="display: none;" name='zhengce'>政策</div>
-                        <div class="dd" style="display: none;" name='xinwen'>新闻</div>
+                        <div class="ddselect" style="display: none;" name='wenjian'>文件</div>
+                        <div class="ddselect" style="display: none;" name='zhengce'>政策</div>
+                        <div class="ddselect" style="display: none;" name='xinwen'>新闻</div>
                         <!-- </div -->
                     </div>
                     <script>
                         $(function () {
                             $('.select').on('mouseenter', function () {
-                                $('.dd').show();
+                                $('.ddselect').show();
                             });
                             $('.select').on('mouseleave', function () {
-                                $('.dd').hide();
+                                $('.ddselect').hide();
                             });
-                            $('.dd').on('click', function (event) {
+                            $('.ddselect').on('click', function (event) {
                                 $('.dt').text($(this).text());
-                                $('.dd').hide();
+                                $('.ddselect').hide();
                                 // $('input').attr('placeholder','请输入'+$(this).text()+'信息.......');
                                 var str = $(this).attr('name');
                                 /*alert(str);*/
-                                $('form').hide();
+                                $('.xuanze').hide();
                                 $('.'+str).show();
                                 return false;
                             })
@@ -84,15 +84,15 @@
                             width: 340px;
                         }
                     </style>
-                    <form class="wenjian left" action="<?php echo url('Index/search_file'); ?>" method="post" enctype="multipart/form-data">
+                    <form class="wenjian left xuanze" action="<?php echo url('Index/search_file'); ?>" method="post" enctype="multipart/form-data">
                         <input class="left" placeholder="请输入要搜索的政府文件" type="search" name="keywords" id="" value="">
                         <button class="left">搜索</button>
                     </form>
-                    <form class="zhengce left" style="display: none;" action="<?php echo url('Index/search_zhengce'); ?>" method="post" enctype="multipart/form-data">
+                    <form class="zhengce left xuanze" style="display: none;" action="<?php echo url('Index/search_zhengce'); ?>" method="post" enctype="multipart/form-data">
                         <input class="left" placeholder="请输入要搜索的政策标题" type="search" name="keywords" id="" value="">
                         <button class="left">搜索</button>
                     </form>
-                    <form class="xinwen left" style="display: none" action="<?php echo url('Index/search_news'); ?>" method="post" enctype="multipart/form-data">
+                    <form class="xinwen left xuanze" style="display: none" action="<?php echo url('Index/search_news'); ?>" method="post" enctype="multipart/form-data">
                         <input class="left" placeholder="请输入要搜索的新闻标题" type="search" name="keywords" id="" value="">
                         <button class="left">搜索</button>
                     </form>

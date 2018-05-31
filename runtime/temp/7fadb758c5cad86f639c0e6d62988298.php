@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"E:\WWW\huaxian\public/../application/admin\view\city\lst_basics.html";i:1526352407;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"E:\WWW\huaxian\public/../application/admin\view\city\lst_basics.html";i:1527673928;}*/ ?>
 ﻿   <!DOCTYPE HTML>
 <html>
 <head>
@@ -75,6 +75,12 @@
     </span>
     </div>
     <div class="row cl" style="margin-top: 40px; margin-left: 200px;" >
+      <label class="form-label col-2" style="width: 90px">描述：</label>
+      <div class="formControls col-5">
+          <textarea name="description" class="textarea"  placeholder="请输入基础设施描述内容..."  dragonfly="true" nullmsg="内容不能为空！" readonly="true" onKeyUp="textarealength(this,300)"><?php echo $list['description']; ?></textarea>
+      </div>
+    </div>
+    <div class="row cl" style="margin-top: 20px; margin-left: 200px;" >
       <label class="form-label col-2" style="width: 90px">卫生内容：</label>
       <div class="formControls col-5">
           <textarea name="health" class="textarea"  placeholder="请输入卫生相关内容..."  dragonfly="true" nullmsg="内容不能为空！" readonly="true" onKeyUp="textarealength(this,300)"><?php echo $list['health']; ?></textarea>

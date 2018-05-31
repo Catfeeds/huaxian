@@ -19,27 +19,32 @@ class City extends Base{
 	//添加基础设施
 	public function basicsadd(){
 		if(request()->isPost()){
+			$data['description']=input('description');
 			$data['health']=input('health');
 			$data['culture']=input('culture');
 			$data['edu']=input('edu');
 			$data['user']=session('adminid'); 
 			$data['time']=date('Y-m-d H:i:s');
-			if($data['health']){
-				if($data['culture']){
-					if($data['edu']){
-						if(db('basics')->insert($data)){
-							return $this->redirect('City/basicsadd_success');
+			if($data['description']){
+				if($data['health']){
+					if($data['culture']){
+						if($data['edu']){
+							if(db('basics')->insert($data)){
+								return $this->redirect('City/basicsadd_success');
+							}else{
+								return $this->error('添加失败');
+							}
 						}else{
-							return $this->error('添加失败');
+							return $this->error('请添加教育相关内容！');
 						}
 					}else{
-						return $this->error('请添加教育相关内容！');
+						return $this->error('请添加文化相关内容！');
 					}
 				}else{
-					return $this->error('请添加文化相关内容！');
+					return $this->error('请添加卫生的内容！');
 				}
 			}else{
-				return $this->error('请添加卫生的内容！');
+				return $this->error('请添加基础设施描述内容！');
 			}
 		}
 		return $this->fetch('basics-add');
@@ -56,27 +61,32 @@ class City extends Base{
 		$this->assign('list',$list);
 		if(request()->isPost()){
 			$data['id']=$id;
+			$data['description']=input('description');
 			$data['health']=input('health');
 			$data['culture']=input('culture');
 			$data['edu']=input('edu');
 			$data['user']=session('adminid'); 
 			$data['time']=date('Y-m-d H:i:s');
-			if($data['health']){
-				if($data['culture']){
-					if($data['edu']){
-						if(db('basics')->update($data)){
-							return $this->redirect('City/basicsedit_success');
+			if($data['description']){
+				if($data['health']){
+					if($data['culture']){
+						if($data['edu']){
+							if(db('basics')->update($data)){
+								return $this->redirect('City/basicsedit_success');
+							}else{
+								return $this->error('修改失败');
+							}
 						}else{
-							return $this->error('修改失败');
+							return $this->error('请添加教育相关内容！');
 						}
 					}else{
-						return $this->error('请添加教育相关内容！');
+						return $this->error('请添加文化相关内容！');
 					}
 				}else{
-					return $this->error('请添加文化相关内容！');
+					return $this->error('请添加卫生的内容！');
 				}
 			}else{
-				return $this->error('请添加卫生的内容！');
+				return $this->error('请添加基础设施描述内容！');
 			}
 		}
 		return $this->fetch('basics-edit');
@@ -102,17 +112,22 @@ class City extends Base{
 	//添加主导产业定位
 	public function mainadd(){
 		if(request()->isPost()){
+			$data['description']=input('description');
 			$data['content']=input('content');
 			$data['user']=session('adminid'); 
 			$data['time']=date('Y-m-d H:i:s');
-			if($data['content']){
-				if(db('main')->insert($data)){
-					return $this->redirect('City/mainadd_success');
+			if($data['description']){
+				if($data['content']){
+					if(db('main')->insert($data)){
+						return $this->redirect('City/mainadd_success');
+					}else{
+						return $this->error('添加失败');
+					}
 				}else{
-					return $this->error('添加失败');
+					return $this->error('请添加主导产业定位的相关内容！');
 				}
 			}else{
-				return $this->error('请添加主导产业定位的相关内容！');
+				return $this->error('请添加主导产业定位的描述内容！');
 			}
 		}
 		return $this->fetch('main-add');
@@ -129,17 +144,22 @@ class City extends Base{
 		$this->assign('list',$list);
 		if(request()->isPost()){
 			$data['id']=$id;
+			$data['description']=input('description');
 			$data['content']=input('content');
 			$data['user']=session('adminid'); 
 			$data['time']=date('Y-m-d H:i:s');
-			if($data['content']){
-				if(db('main')->update($data)){
-					return $this->redirect('City/mainedit_success');
+			if($data['description']){
+				if($data['content']){
+					if(db('main')->update($data)){
+						return $this->redirect('City/mainedit_success');
+					}else{
+						return $this->error('修改失败');
+					}
 				}else{
-					return $this->error('修改失败');
+					return $this->error('请添加主导产业定位的相关内容！');
 				}
 			}else{
-				return $this->error('请添加主导产业定位的相关内容！');
+				return $this->error('请添加主导产业定位的描述内容！');
 			}
 		}
 		return $this->fetch('main-edit');
@@ -165,17 +185,22 @@ class City extends Base{
 	//添加远期规划
 	public function planadd(){
 		if(request()->isPost()){
+			$data['description']=input('description');
 			$data['content']=input('content');
 			$data['user']=session('adminid'); 
 			$data['time']=date('Y-m-d H:i:s');
-			if($data['content']){
-				if(db('plan')->insert($data)){
-					return $this->redirect('City/planadd_success');
+			if($data['description']){
+				if($data['content']){
+					if(db('plan')->insert($data)){
+						return $this->redirect('City/planadd_success');
+					}else{
+						return $this->error('添加失败');
+					}
 				}else{
-					return $this->error('添加失败');
+					return $this->error('请添加远期规划的相关内容！');
 				}
 			}else{
-				return $this->error('请添加远期规划的相关内容！');
+				return $this->error('请添加远期规划的描述内容！');
 			}
 		}
 		return $this->fetch('plan-add');
@@ -192,17 +217,22 @@ class City extends Base{
 		$this->assign('list',$list);
 		if(request()->isPost()){
 			$data['id']=$id;
+			$data['description']=input('description');
 			$data['content']=input('content');
 			$data['user']=session('adminid'); 
 			$data['time']=date('Y-m-d H:i:s');
-			if($data['content']){
-				if(db('plan')->update($data)){
-					return $this->redirect('City/planedit_success');
+			if($data['description']){
+				if($data['content']){
+					if(db('plan')->update($data)){
+						return $this->redirect('City/planedit_success');
+					}else{
+						return $this->error('修改失败');
+					}
 				}else{
-					return $this->error('修改失败');
+					return $this->error('请添加远期规划的相关内容！');
 				}
 			}else{
-				return $this->error('请添加远期规划的相关内容！');
+				return $this->error('请添加远期规划的描述内容！');
 			}
 		}
 		return $this->fetch('plan-edit');
@@ -228,17 +258,22 @@ class City extends Base{
 	//添加园区规划
 	public function yuanquadd(){
 		if(request()->isPost()){
+			$data['description']=input('description');
 			$data['content']=input('content');
 			$data['user']=session('adminid'); 
 			$data['time']=date('Y-m-d H:i:s');
-			if($data['content']){
-				if(db('yuanqu')->insert($data)){
-					return $this->redirect('City/yuanquadd_success');
+			if($data['description']){
+				if($data['content']){
+					if(db('yuanqu')->insert($data)){
+						return $this->redirect('City/yuanquadd_success');
+					}else{
+						return $this->error('添加失败');
+					}
 				}else{
-					return $this->error('添加失败');
+					return $this->error('请添加园区规划的相关内容！');
 				}
 			}else{
-				return $this->error('请添加园区规划的相关内容！');
+				return $this->error('请添加园区规划的描述内容！');
 			}
 		}
 		return $this->fetch('yuanqu-add');
@@ -255,17 +290,22 @@ class City extends Base{
 		$this->assign('list',$list);
 		if(request()->isPost()){
 			$data['id']=$id;
+			$data['description']=input('description');
 			$data['content']=input('content');
 			$data['user']=session('adminid'); 
 			$data['time']=date('Y-m-d H:i:s');
-			if($data['content']!=''){
-				if(db('yuanqu')->update($data)){
-					return $this->redirect('City/yuanquedit_success');
+			if($data['description']){
+				if($data['content']!=''){
+					if(db('yuanqu')->update($data)){
+						return $this->redirect('City/yuanquedit_success');
+					}else{
+						return $this->error('修改失败');
+					}
 				}else{
-					return $this->error('修改失败');
+					return $this->error('请添加园区规划的相关内容！');
 				}
 			}else{
-				return $this->error('请添加园区规划的相关内容！');
+				return $this->error('请添加园区规划的描述内容！');
 			}
 		}
 		return $this->fetch('yuanqu-edit');
@@ -291,17 +331,22 @@ class City extends Base{
 	//添加六通一平情况
 	public function liutongadd(){
 		if(request()->isPost()){
+			$data['description']=input('description');
 			$data['content']=input('content');
 			$data['user']=session('adminid'); 
 			$data['time']=date('Y-m-d H:i:s');
-			if($data['content']){
-				if(db('liutong')->insert($data)){
-					return $this->redirect('City/liutongadd_success');
+			if($data['description']){
+				if($data['content']){
+					if(db('liutong')->insert($data)){
+						return $this->redirect('City/liutongadd_success');
+					}else{
+						return $this->error('添加失败');
+					}
 				}else{
-					return $this->error('添加失败');
+					return $this->error('请添加六通一平情况的相关内容！');
 				}
 			}else{
-				return $this->error('请添加六通一平情况的相关内容！');
+				return $this->error('请添加六通一平的描述内容！');
 			}
 		}
 		return $this->fetch('liutong-add');
@@ -318,17 +363,22 @@ class City extends Base{
 		$this->assign('list',$list);
 		if(request()->isPost()){
 			$data['id']=$id;
+			$data['description']=input('description');
 			$data['content']=input('content');
 			$data['user']=session('adminid'); 
 			$data['time']=date('Y-m-d H:i:s');
-			if($data['content']){
-				if(db('liutong')->update($data)){
-					return $this->redirect('City/liutongedit_success');
+			if($data['description']){
+				if($data['content']){
+					if(db('liutong')->update($data)){
+						return $this->redirect('City/liutongedit_success');
+					}else{
+						return $this->error('修改失败');
+					}
 				}else{
-					return $this->error('修改失败');
+					return $this->error('请添加六通一平情况的相关内容！');
 				}
 			}else{
-				return $this->error('请添加六通一平情况的相关内容！');
+				return $this->error('请添加六通一平的描述内容！');
 			}
 		}
 		return $this->fetch('liutong-edit');
@@ -354,17 +404,22 @@ class City extends Base{
 	//添加污水处理厂
 	public function wateradd(){
 		if(request()->isPost()){
+			$data['description']=input('description');
 			$data['content']=input('content');
 			$data['user']=session('adminid'); 
 			$data['time']=date('Y-m-d H:i:s');
-			if($data['content']){
-				if(db('water')->insert($data)){
-					return $this->redirect('City/wateradd_success');
+			if($data['description']){
+				if($data['content']){
+					if(db('water')->insert($data)){
+						return $this->redirect('City/wateradd_success');
+					}else{
+						return $this->error('添加失败');
+					}
 				}else{
-					return $this->error('添加失败');
+					return $this->error('请添加污水处理厂的相关内容！');
 				}
 			}else{
-				return $this->error('请添加污水处理厂的相关内容！');
+				return $this->error('请添加污水处理厂的描述内容！');
 			}
 		}
 		return $this->fetch('water-add');
@@ -381,17 +436,22 @@ class City extends Base{
 		$this->assign('list',$list);
 		if(request()->isPost()){
 			$data['id']=$id;
+			$data['description']=input('description');
 			$data['content']=input('content');
 			$data['user']=session('adminid'); 
 			$data['time']=date('Y-m-d H:i:s');
-			if($data['content']){
-				if(db('water')->update($data)){
-					return $this->redirect('City/wateredit_success');
+			if($data['description']){
+				if($data['content']){
+					if(db('water')->update($data)){
+						return $this->redirect('City/wateredit_success');
+					}else{
+						return $this->error('修改失败');
+					}
 				}else{
-					return $this->error('修改失败');
+					return $this->error('请添加污水处理厂的相关内容！');
 				}
 			}else{
-				return $this->error('请添加污水处理厂的相关内容！');
+				return $this->error('请添加污水处理厂的描述内容！');
 			}
 		}
 		return $this->fetch('water-edit');
