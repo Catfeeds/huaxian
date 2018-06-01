@@ -32,7 +32,7 @@
         <p class="top_text">政府文件<span><a href="{:url('Gov/file')}" style="color: #666;">更多>></a></span></p>
         <ul>
           {volist name="file" id="vo"}
-            <li><span><!-- <a href="{:url('Gov/download',array('id'=>$vo.id))}" style="text-decoration: none !important;color: #333;"> -->{$vo.file}<!-- </a> --></span><a href="{:url('Gov/filedetail',array('id'=>$vo.id))}">查看详情</a></li>
+            <li><span><!-- <a href="{:url('Gov/download',array('id'=>$vo.id))}" style="text-decoration: none !important;color: #333;"> -->{$vo.file}<!-- </a> --></span><a href="{:url('Gov/filedetail',array('id'=>$vo.id))}" title="{$vo.file}">查看详情</a></li>
           {/volist}
           <!-- <li><span>滑县产业扶贫加工基地金泰服装建设</span><a href="#">查看详情</a></li> -->
         </ul>
@@ -86,4 +86,7 @@
   <script src="__PUBLIC__/js/jquery-3.3.1.js"></script>
   <script src="__PUBLIC__/js/swiper-4.2.2.min.js"></script>
   <script src="__PUBLIC__/js/governmentStyle.js"></script>
+  <script type="text/javascript">
+    $('.top-nav li:eq(1)').css('background-color','#6c9fee');
+  </script>
 </html>

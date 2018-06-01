@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:64:"E:\WWW\huaxian\public/../application/index\view\index\index.html";i:1527218517;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527726933;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:64:"E:\WWW\huaxian\public/../application/index\view\index\index.html";i:1527754317;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527737782;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,21 +112,6 @@
                     <li tipName='办事指南'><a href="<?php echo url('Work/index'); ?>">办事指南</a></li>
                     <li tipName='进言献策'><a href="<?php echo url('Message/index'); ?>">进言献策</a></li>
                     <li tipName='联系我们'><a href="<?php echo url('Call/call'); ?>">联系我们</a></li>
-                    <script>
-                    $(function(){
-                        /*var str = window.location;
-                        str = str.toString();
-                        
-                        alert(str.length);*/
-                        var name = $('title').text();
-                        $('.top-nav li').each(function(){
-                            if($(this).attr('tipName') == name){
-                                $(this).addClass('current').siblings().removeClass('current');
-                            }
-                        })
-                    })
-
-                    </script>
                 </ul>
             </div>
         </div>
@@ -413,17 +398,17 @@
                         <li>新闻动态
                             <ul>
                                 <?php if(is_array($news) || $news instanceof \think\Collection || $news instanceof \think\Paginator): $i = 0; $__LIST__ = $news;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v2): $mod = ($i % 2 );++$i;?>
-                                    <li><a href="<?php echo url('Index/newsdetail',array('id'=>$v2['id'])); ?>"><?php echo $v2['title']; ?></a><span>[<?php echo $v2['newstime']; ?>]</span></li>
+                                    <li><a href="<?php echo url('Index/newsdetail',array('id'=>$v2['id'])); ?>" title="<?php echo $v2['title']; ?>"><?php echo $v2['title']; ?></a><span>[<?php echo $v2['newstime']; ?>]</span></li>
                                 <?php endforeach; endif; else: echo "" ;endif; ?>
                                 <!-- <li><a href="##">李克强李克强李克强李克强李克强近平总书记</a><span>[2018-05-01]</span></li> -->
-                                <li style="margin-top: 10px;"><a href="<?php echo url('Index/news'); ?>" style="float: right;margin-right: 20px;background: none;color: #666;">更多>></a></li>
+                                <li style="margin-top: 10px;text-align: right;"><a href="<?php echo url('Index/news'); ?>" style="float: right;margin-right: 20px;background: none;color: #666;">更多>></a></li>
                             </ul>
                             <i></i>
                         </li>
                         <li>通知公告
                             <ul>
                                 <?php if(is_array($notice) || $notice instanceof \think\Collection || $notice instanceof \think\Paginator): $i = 0; $__LIST__ = $notice;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v3): $mod = ($i % 2 );++$i;?>
-                                    <li><a href="<?php echo url('Index/noticedetail',array('id'=>$v3['id'])); ?>"><?php echo $v3['title']; ?></a><span>[<?php echo date('Y-m-d',strtotime($v3['time'])); ?>]</span></li>
+                                    <li><a href="<?php echo url('Index/noticedetail',array('id'=>$v3['id'])); ?>" title="<?php echo $v3['title']; ?>"><?php echo $v3['title']; ?></a><span>[<?php echo date('Y-m-d',strtotime($v3['time'])); ?>]</span></li>
                                 <?php endforeach; endif; else: echo "" ;endif; ?>
                                 <!-- <li><a href="##">习近平总书记习近平总书记近平总书记</a><span>[2018-05-10]</span></li> -->
                             </ul>
@@ -621,4 +606,7 @@
 <!-- </body> -->
 <!-- </html> -->
 </body>
+<script type="text/javascript">
+    $('.top-nav li:eq(0)').css('background-color','#6c9fee');
+</script>
 </html>

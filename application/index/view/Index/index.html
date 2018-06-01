@@ -135,17 +135,17 @@
                         <li>新闻动态
                             <ul>
                                 {volist name="news" id="v2"}
-                                    <li><a href="{:url('Index/newsdetail',array('id'=>$v2['id']))}">{$v2.title}</a><span>[{$v2.newstime}]</span></li>
+                                    <li><a href="{:url('Index/newsdetail',array('id'=>$v2['id']))}" title="{$v2.title}">{$v2.title}</a><span>[{$v2.newstime}]</span></li>
                                 {/volist}
                                 <!-- <li><a href="##">李克强李克强李克强李克强李克强近平总书记</a><span>[2018-05-01]</span></li> -->
-                                <li style="margin-top: 10px;"><a href="{:url('Index/news')}" style="float: right;margin-right: 20px;background: none;color: #666;">更多>></a></li>
+                                <li style="margin-top: 10px;text-align: right;"><a href="{:url('Index/news')}" style="float: right;margin-right: 20px;background: none;color: #666;">更多>></a></li>
                             </ul>
                             <i></i>
                         </li>
                         <li>通知公告
                             <ul>
                                 {volist name="notice" id="v3"}
-                                    <li><a href="{:url('Index/noticedetail',array('id'=>$v3['id']))}">{$v3.title}</a><span>[{$v3.time|strtotime|date='Y-m-d',###}]</span></li>
+                                    <li><a href="{:url('Index/noticedetail',array('id'=>$v3['id']))}" title="{$v3.title}">{$v3.title}</a><span>[{$v3.time|strtotime|date='Y-m-d',###}]</span></li>
                                 {/volist}
                                 <!-- <li><a href="##">习近平总书记习近平总书记近平总书记</a><span>[2018-05-10]</span></li> -->
                             </ul>
@@ -283,4 +283,7 @@
 <!-- 引用公共底部 -->
 {include file="common/footer" /}
 </body>
+<script type="text/javascript">
+    $('.top-nav li:eq(0)').css('background-color','#6c9fee');
+</script>
 </html>

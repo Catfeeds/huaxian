@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"E:\WWW\huaxian\public/../application/admin\view\message\lst_all.html";i:1526549224;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"E:\WWW\huaxian\public/../application/admin\view\message\lst_all.html";i:1527823099;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -54,7 +54,7 @@
 	<table class="table table-border table-bordered table-bg nulltable">
 		<thead>
 			<tr>
-				<th scope="col" colspan="10">进言献策列表</th>
+				<th scope="col" colspan="11">进言献策列表</th>
 			</tr>
 			<tr class="text-c">
 				<th width="3%"><input type="checkbox" name="" value=""></th>

@@ -8,10 +8,10 @@ class Index extends Base1{
 	//首页
 	public function index(){
         //新闻
-        $news = db('news')->order('id desc')->select();
+        $news = db('news')->order('id desc')->limit(8)->select();
 
         //公告
-        $notice = db('notice')->order('id desc')->select();
+        $notice = db('notice')->order('id desc')->limit(8)->select();
         
         //重点企业
         $company = db('company')->order('id asc')->select();

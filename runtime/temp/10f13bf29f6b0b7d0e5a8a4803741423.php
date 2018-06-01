@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"E:\WWW\huaxian\public/../application/admin\view\work\ruodian-edit.html";i:1527473931;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"E:\WWW\huaxian\public/../application/admin\view\work\ruodian-edit.html";i:1527586945;}*/ ?>
    <!DOCTYPE HTML>
 <html>
 <head>

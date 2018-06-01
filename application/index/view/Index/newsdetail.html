@@ -11,7 +11,7 @@
     {include file="common/header" /}
   <div class="wrap">
     <div class="center">
-      <p class="top_title">您现在的位置 | <a href="{:url('Index/index')}">首页</a> > | <span> 新闻详情 </span></p>
+      <p class="top_title">您现在的位置 | <a href="{:url('Index/index')}">首页</a> > | <span> 新闻详情 </span> | {$news.title}</p>
       <!-- <div class="download_button">
         <a href="#">
           <img src="__PUBLIC__/images/download1.png" alt="请重新加载">
@@ -26,4 +26,7 @@
   <!-- 引用公共底部 -->
 {include file="common/footer" /}
 </body>
+<script type="text/javascript">
+    $('.top-nav li:eq(0)').css('background-color','#6c9fee');
+</script>
 </html>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"E:\WWW\huaxian\public/../application/admin\view\work\dianli-edit.html";i:1527472565;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"E:\WWW\huaxian\public/../application/admin\view\work\dianli-edit.html";i:1527822712;}*/ ?>
    <!DOCTYPE HTML>
 <html>
 <head>
@@ -67,15 +67,15 @@
     <form action="<?php echo url('Work/dianliedit'); ?>" method="post" class="form form-horizontal" enctype="multipart/form-data">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         <div class="mt-20">
-            <div class="row cl" style="margin-top: 40px;margin-left: 200px;">
-                <label class="form-label col-3" style="width: 140px"><span class="c-red">*</span>地址：</label>
+            <div class="row cl" style="margin-top: 40px;">
+                <label class="form-label col-3" ><span class="c-red">*</span>地址：</label>
                 <div class="formControls col-6">
                     <input type="text" name="address" class="input-text" value="<?php echo $list['address']; ?>" placeholder="" id="" datatype="*1-200" nullmsg="标题不能为空" style="width: 360px;">
                 </div>
                 <div class="col-1"> </div>
             </div>
-            <div class="row cl" style="margin-top: 20px;margin-left: 200px;">
-                <label class="form-label col-3" style="width: 140px"><span class="c-red">*</span>申报材料：</label>
+            <div class="row cl" style="margin-top: 20px;">
+                <label class="form-label col-3" ><span class="c-red">*</span>申报材料：</label>
                 <div class="formControls col-6"> 
                     <textarea name="content" id="content" style="width:100%; height: 700px;" ><?php echo $list['content']; ?></textarea> 
                 </div>

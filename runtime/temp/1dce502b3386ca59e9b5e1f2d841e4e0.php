@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"E:\WWW\huaxian\public/../application/index\view\index\events.html";i:1527218517;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527726933;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"E:\WWW\huaxian\public/../application/index\view\index\events.html";i:1527749492;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527737782;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -111,21 +111,6 @@
                     <li tipName='办事指南'><a href="<?php echo url('Work/index'); ?>">办事指南</a></li>
                     <li tipName='进言献策'><a href="<?php echo url('Message/index'); ?>">进言献策</a></li>
                     <li tipName='联系我们'><a href="<?php echo url('Call/call'); ?>">联系我们</a></li>
-                    <script>
-                    $(function(){
-                        /*var str = window.location;
-                        str = str.toString();
-                        
-                        alert(str.length);*/
-                        var name = $('title').text();
-                        $('.top-nav li').each(function(){
-                            if($(this).attr('tipName') == name){
-                                $(this).addClass('current').siblings().removeClass('current');
-                            }
-                        })
-                    })
-
-                    </script>
                 </ul>
             </div>
         </div>
@@ -462,4 +447,7 @@
 <!-- </body> -->
 <!-- </html> -->
 </body>
+<script type="text/javascript">
+    $('.top-nav li:eq(0)').css('background-color','#6c9fee');
+</script>
 </html>

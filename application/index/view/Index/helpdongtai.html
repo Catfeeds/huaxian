@@ -26,7 +26,7 @@
         <div class="file_list">
             <div class="file_list_center">
                 {volist name="helpdongtai" id="vo"}
-                    <div class="file_detail"><a href="{:url('Index/helpdongtaidetail',array('id'=>$vo.id))}" style="color: #666;">{$vo.title}</a></div>
+                    <div class="file_detail"><a href="{:url('Index/helpdongtaidetail',array('id'=>$vo.id))}" title="{$vo.title}" style="color: #666;">{$vo.title}</a></div>
                 {/volist}
                 <!-- <div class="file_detail">滑县产业扶贫加工基地金泰服装建设</div> -->
             </div>
@@ -36,4 +36,7 @@
 <!-- 引用公共底部 -->
 {include file="common/footer" /}
 </body>
+<script type="text/javascript">
+    $('.top-nav li:eq(0)').css('background-color','#6c9fee');
+</script>
 </html>

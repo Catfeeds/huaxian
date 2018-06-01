@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:64:"E:\WWW\huaxian\public/../application/index\view\message\hot.html";i:1527727026;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527726933;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:64:"E:\WWW\huaxian\public/../application/index\view\message\hot.html";i:1527753867;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527737782;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,21 +109,6 @@
                     <li tipName='办事指南'><a href="<?php echo url('Work/index'); ?>">办事指南</a></li>
                     <li tipName='进言献策'><a href="<?php echo url('Message/index'); ?>">进言献策</a></li>
                     <li tipName='联系我们'><a href="<?php echo url('Call/call'); ?>">联系我们</a></li>
-                    <script>
-                    $(function(){
-                        /*var str = window.location;
-                        str = str.toString();
-                        
-                        alert(str.length);*/
-                        var name = $('title').text();
-                        $('.top-nav li').each(function(){
-                            if($(this).attr('tipName') == name){
-                                $(this).addClass('current').siblings().removeClass('current');
-                            }
-                        })
-                    })
-
-                    </script>
                 </ul>
             </div>
         </div>
@@ -303,7 +288,7 @@
         <div class="file_list">
             <div class="file_list_center">
                 <?php if(is_array($hot_message) || $hot_message instanceof \think\Collection || $hot_message instanceof \think\Paginator): $i = 0; $__LIST__ = $hot_message;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                    <div class="file_detail"><?php echo $vo['title']; ?></div>
+                    <div class="file_detail" title="<?php echo $vo['title']; ?>"><?php echo $vo['title']; ?></div>
                 <?php endforeach; endif; else: echo "" ;endif; ?>
                 <!-- <div class="file_detail">热门问题热门问题热门问题热门问题热门问题</div> -->
             </div>
@@ -373,4 +358,7 @@
 <!-- </body> -->
 <!-- </html> -->
 </body>
+<script type="text/javascript">
+    $('.top-nav li:eq(5)').css('background-color','#6c9fee');
+</script>
 </html>

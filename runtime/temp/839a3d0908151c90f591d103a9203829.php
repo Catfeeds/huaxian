@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"E:\WWW\huaxian\public/../application/index\view\index\help.html";i:1527667718;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527726933;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"E:\WWW\huaxian\public/../application/index\view\index\help.html";i:1527754051;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527737782;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,21 +109,6 @@
                     <li tipName='办事指南'><a href="<?php echo url('Work/index'); ?>">办事指南</a></li>
                     <li tipName='进言献策'><a href="<?php echo url('Message/index'); ?>">进言献策</a></li>
                     <li tipName='联系我们'><a href="<?php echo url('Call/call'); ?>">联系我们</a></li>
-                    <script>
-                    $(function(){
-                        /*var str = window.location;
-                        str = str.toString();
-                        
-                        alert(str.length);*/
-                        var name = $('title').text();
-                        $('.top-nav li').each(function(){
-                            if($(this).attr('tipName') == name){
-                                $(this).addClass('current').siblings().removeClass('current');
-                            }
-                        })
-                    })
-
-                    </script>
                 </ul>
             </div>
         </div>
@@ -313,7 +298,7 @@
       <div class="file_list">
         <div class="file_list_center">
           <?php if(is_array($helpdongtai) || $helpdongtai instanceof \think\Collection || $helpdongtai instanceof \think\Paginator): $i = 0; $__LIST__ = $helpdongtai;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-            <div class="file_detail"><a href="<?php echo url('Index/helpdongtaidetail',array('id'=>$vo['id'])); ?>" style="color: #666;"><?php echo $vo['title']; ?></a></div>
+            <div class="file_detail"><a href="<?php echo url('Index/helpdongtaidetail',array('id'=>$vo['id'])); ?>" title="<?php echo $vo['title']; ?>" style="color: #666;"><?php echo $vo['title']; ?></a></div>
           <?php endforeach; endif; else: echo "" ;endif; ?>
           <!-- <div class="file_detail">滑县产业扶贫加工基地金泰服装建设</div> -->
         </div>
@@ -324,7 +309,7 @@
       <div class="file_list">
         <div class="file_list_center">
           <?php if(is_array($help) || $help instanceof \think\Collection || $help instanceof \think\Paginator): $i = 0; $__LIST__ = $help;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v1): $mod = ($i % 2 );++$i;?>
-            <div class="file_detail"><a href="<?php echo url('Index/helpzhengcedetail',array('id'=>$v1['id'])); ?>" style="color: #666;"><?php echo $v1['title']; ?></a></div>
+            <div class="file_detail"><a href="<?php echo url('Index/helpzhengcedetail',array('id'=>$v1['id'])); ?>" title="<?php echo $v1['title']; ?>" style="color: #666;"><?php echo $v1['title']; ?></a></div>
           <?php endforeach; endif; else: echo "" ;endif; ?>
           <!-- <div class="file_detail">滑县产业扶贫加工基地金泰服装333333建设</div> -->
         </div>
@@ -394,4 +379,7 @@
 <!-- </body> -->
 <!-- </html> -->
 </body>
+<script type="text/javascript">
+    $('.top-nav li:eq(0)').css('background-color','#6c9fee');
+</script>
 </html>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:64:"E:\WWW\huaxian\public/../application/admin\view\login\login.html";i:1526634743;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:64:"E:\WWW\huaxian\public/../application/admin\view\login\login.html";i:1527821991;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -63,7 +63,7 @@
        </form>
   </div>
 </div>
-<div class="footer">Copyright @ 陆港易冷链版权所有</div>
+<div class="footer">Copyright @ 河南中浩信息科技有限公司所有</div>
 <script type="text/javascript" src="__PUBLIC__/lib/jquery/1.9.1/jquery.min.js"></script> 
 <script type="text/javascript" src="__PUBLIC__/js/H-ui.js"></script> 
 <script type="text/javascript" src="__PUBLIC__/js/H-ui.admin.js"></script>

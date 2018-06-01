@@ -96,7 +96,7 @@
     font: 500 20px/50px "Microsoft YaHei";
     cursor: pointer;
 }
-.top .top-nav ul li.current {
+.top .top-nav ul li:hover{
     background-color: #6c9fee;
 }
 .select {

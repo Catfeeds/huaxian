@@ -342,15 +342,19 @@
     left: 0;
     font-weight: bold;
     margin-right: 5px;
+    width: 187px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
 }
 .mid_content_download a span.overhide {
     width: 150px;
     overflow: hidden;
-    margin-left: 155px;
+    margin-left: 184px;
     text-overflow: ellipsis;
     white-space: nowrap;
     display: inline-block;
-    color: #242425;
 }
 .mid_content_download a span:last-child {
     float: right;

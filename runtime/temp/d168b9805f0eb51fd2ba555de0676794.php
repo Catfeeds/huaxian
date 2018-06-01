@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:70:"E:\WWW\huaxian\public/../application/index\view\work\lst_gongshui.html";i:1526888842;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527665511;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:70:"E:\WWW\huaxian\public/../application/index\view\work\lst_gongshui.html";i:1527752624;s:66:"E:\WWW\huaxian\public/../application/index\view\common\header.html";i:1527737782;s:66:"E:\WWW\huaxian\public/../application/index\view\common\footer.html";i:1527586945;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,22 +55,22 @@
                     <div class="select">
                         <div class="dt">文件</div>
                         <!-- <div class="box2" style="display: none;"> -->
-                        <div class="dd" style="display: none;" name='wenjian'>文件</div>
-                        <div class="dd" style="display: none;" name='zhengce'>政策</div>
-                        <div class="dd" style="display: none;" name='xinwen'>新闻</div>
+                        <div class="ddselect" style="display: none;" name='wenjian'>文件</div>
+                        <div class="ddselect" style="display: none;" name='zhengce'>政策</div>
+                        <div class="ddselect" style="display: none;" name='xinwen'>新闻</div>
                         <!-- </div -->
                     </div>
                     <script>
                         $(function () {
                             $('.select').on('mouseenter', function () {
-                                $('.dd').show();
+                                $('.ddselect').show();
                             });
                             $('.select').on('mouseleave', function () {
-                                $('.dd').hide();
+                                $('.ddselect').hide();
                             });
-                            $('.dd').on('click', function (event) {
+                            $('.ddselect').on('click', function (event) {
                                 $('.dt').text($(this).text());
-                                $('.dd').hide();
+                                $('.ddselect').hide();
                                 // $('input').attr('placeholder','请输入'+$(this).text()+'信息.......');
                                 var str = $(this).attr('name');
                                 /*alert(str);*/
@@ -110,21 +110,6 @@
                     <li tipName='办事指南'><a href="<?php echo url('Work/index'); ?>">办事指南</a></li>
                     <li tipName='进言献策'><a href="<?php echo url('Message/index'); ?>">进言献策</a></li>
                     <li tipName='联系我们'><a href="<?php echo url('Call/call'); ?>">联系我们</a></li>
-                    <script>
-                    $(function(){
-                        /*var str = window.location;
-                        str = str.toString();
-                        
-                        alert(str.length);*/
-                        var name = $('title').text();
-                        $('.top-nav li').each(function(){
-                            if($(this).attr('tipName') == name){
-                                $(this).addClass('current').siblings().removeClass('current');
-                            }
-                        })
-                    })
-
-                    </script>
                 </ul>
             </div>
         </div>
@@ -365,5 +350,8 @@
     </div>
 <!-- </body> -->
 <!-- </html> -->
-</body>         
+</body> 
+<script type="text/javascript">
+    $('.top-nav li:eq(4)').css('background-color','#6c9fee');
+</script>        
 </html>
